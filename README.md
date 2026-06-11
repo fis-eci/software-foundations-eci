@@ -5,23 +5,23 @@ nav_order: 1
 permalink: /
 ---
 
-# 🚀 IS-FUNDAMENTOS-LEARNING: Repositorio Central de Monitoría
-> **Línea de Fundamentos de Software** | Escuela Colombiana de Ingeniería Julio Garavito
-> Recursos Educativos para **DOPO** y **MSYD** 🎓
+# 🚀 IS-FUNDAMENTOS: Repositorio Central de Recursos de Aprendizaje
+> **Línea de Fundamentos de Ingeniería de Software** | Escuela Colombiana de Ingeniería Julio Garavito
+> Recursos de Aprendizaje para la línea 🎓
 
 ---
 
 <div align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa_-_Universidad.webp" alt="Logo Escuela" width="350">
   <br>
-  <h1>Objeto de Aprendizaje Integral</h1>
+  <h1>Unidad de Aprendizaje Integral</h1>
   <p><i>"Transformando la teoría en ingeniería aplicada mediante el aprendizaje activo."</i></p>
 </div>
 
 ---
 
 ## 📋 Descripción del Proyecto
-Este repositorio constituye un **Objeto de Aprendizaje (OA)** diseñado bajo estándares institucionales. Su objetivo es proporcionar a los estudiantes de la línea de fundamentos una guía autoformativa, modular y reutilizable sobre las herramientas y conceptos clave del desarrollo de software.
+Este repositorio constituye una **Unidad de Aprendizaje (UA)** diseñado bajo estándares institucionales. Su objetivo es proporcionar a los estudiantes de la línea de fundamentos de Ingeniería de Software un conjunto de recursos de aprendizaje autoformativos, modulares y reutilizables sobre los conceptos y herramientas clave del desarrollo de software.
 
 ---
 
@@ -30,8 +30,8 @@ Cada archivo en este repositorio ha sido diseñado con una secuencia didáctica 
 
 | Archivo | Propósito | Contenido Clave |
 | :--- | :--- | :--- |
-| **[🏠 Home](./home/)** | **Página de Inicio** | Metodología del OA, contexto pedagógico y bienvenida. |
-| **[📦 Unidad 1: CVS](./Unidad-CVS)** | **Control de Versiones** | S1: Teoría de Grafos, S2: Buenas Prácticas y S3: Git/GitHub. |
+| **[🏠 Home](./home/)** | **Página de Inicio** | Metodología del UA, contexto pedagógico y bienvenida. |
+| **[📦 Unidad 1: CVS](./Unidad-CVS)** | **Control de Versiones** | S1: Teoría de CVS, S2: Buenas Prácticas y S3: Git/GitHub. |
 | **[🧪 Unidad 2: Pruebas](./Unidad-Pruebas)** | **Pruebas Unitarias** | R1: Conceptos BDD, R2: Estándares TDD y R3: JUnit en BlueJ. |
 | **[🗄️ Unidad 3: SQL](./Unidad-SQL/)** | **Oracle SQL** | Configuración de servidor remoto, Oracle XE y VS Code. |
 | **[📚 Recursos](./Recursos)** | **Bibliografía** | Enlaces externos, simuladores y documentación oficial. |
@@ -48,23 +48,6 @@ Para la realización de las prácticas guiadas y el despliegue del material se u
 
 ## ⚖️ Licencia
 Este proyecto se distribuye bajo la licencia **Apache License 2.0**. Puedes consultar el archivo [LICENSE](LICENSE) para más detalles sobre el uso y redistribución del material.
-
----
-
-## 🎥 Recursos Multimedia Destacados
-El repositorio integra tutoriales exclusivos diseñados para guiarte paso a paso en cada unidad:
-
-### 📦 Módulo: Control de Versiones (CVS)
-* 🎬 **CVS en Java (DOPO):** Gestión de conflictos y flujo de trabajo con ramas.
-* 🎬 **CVS en SQL (MYSD):** Control de esquemas de bases de datos colaborativos.
-
-### 🧪 Módulo: Pruebas Unitarias
-* 🎬 **Pruebas con JUnit:** Implementación de TDD y BDD aplicados al caso "Cuenta Bancaria".
-
-### 🗄️ Módulo: Oracle SQL (MYSD)
-* 🎬 **Instalación y Personalización:** Preparación de SQL Developer.
-* 🎬 **Conexión a Granate:** Configuración del acceso al servidor remoto de la Escuela.
-* 🎬 **Oracle XE Local:** Instalación y configuración de tu propio laboratorio autónomo.
 
 ---
 
