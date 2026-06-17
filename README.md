@@ -44,6 +44,7 @@ Para la realización de las prácticas guiadas y el despliegue del material se u
 * **Entornos:** BlueJ (Java), GitHub (CVS), Oracle SQL Developer.
 * **Frameworks:** JUnit 4/5 para pruebas de unidad.
 * **Documentación:** Markdown avanzado con soporte para metadatos (Jekyll) y tema **Just the Docs**.
+
 ---
 
 ## ⚖️ Licencia
@@ -60,6 +61,6 @@ Si eres estudiante y encuentras un error o tienes una sugerencia para mejorar es
 
 <div align="center">
   <p><strong>Andersson David Sánchez Méndez</strong></p>
-  <p>Monitor de Línea - Fundamentos de Software</p>
+  <p>Monitor de Línea - Fundamentos de Ingeniería de Software</p>
   <p>© 2026 - Escuela Colombiana de Ingeniería Julio Garavito</p>
 </div>

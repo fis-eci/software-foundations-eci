@@ -1,10 +1,9 @@
-// Fix site title: evita que rompa en cada guion en la barra lateral
 .site-title {
   font-size: 13.5px !important;
   letter-spacing: -0.04em !important;
   word-break: keep-all !important;
   overflow-wrap: normal !important;
-  hyphens: none !important;
+  -webkit-hyphens: none !important;
   white-space: nowrap !important;
   overflow: hidden !important;
   text-overflow: ellipsis !important;

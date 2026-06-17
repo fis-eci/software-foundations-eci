@@ -6,7 +6,7 @@ permalink: /Unidad-Pruebas/
 ---
 
 # 🧪 Unidad 2: Pruebas Unitarias (JUnit)
-> **Línea de Fundamentos de Software** | *IS-FUNDAMENTOS-LEARNING*
+> **Línea de Fundamentos de Ingeniería de Software** | *IS-FUNDAMENTOS*
 > Monitoría de **DOPO (Desarrollo Orientado por Objetos)** 🎓
 
 {: .note }

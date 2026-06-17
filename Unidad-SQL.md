@@ -6,7 +6,7 @@ permalink: /Unidad-SQL/
 ---
 
 # 🗄️ Unidad 3: Entornos de Trabajo Oracle SQL
-> **Línea de Fundamentos de Software** | *IS-FUNDAMENTOS-LEARNING*
+> **Línea de Fundamentos de Ingeniería de Software** | *IS-FUNDAMENTOS*
 > Monitoría de **Modelos y Servicios de Datos (MYSD)** 🎓
 
 {: .note }
@@ -94,5 +94,3 @@ Para una explicación visual detallada sobre la instalación y los tipos de cone
 **Enlaces de interés:**
 * 📘 [Descarga de Oracle SQL Developer](https://www.oracle.com/database/sqldeveloper/)
 * 📦 [Oracle Database Express Edition (XE)](https://www.oracle.com/database/technologies/xe-downloads.html)
-
----

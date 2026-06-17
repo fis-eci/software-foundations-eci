@@ -6,6 +6,8 @@ permalink: /Unidad-CVS/
 ---
 
 # 📦 Unidad 1: Control de Versiones (CVS)
+> **Línea de Fundamentos de Ingeniería de Software** | *IS-FUNDAMENTOS*
+> Monitoría de **DOPO (Desarrollo Orientado por Objetos)** y **Modelos y Servicios de Datos (MYSD)** 🎓
 
 {: .note }
 > **Resultados de Aprendizaje:** Al finalizar esta unidad, comprenderás los conceptos de un CVS, aplicarás buenas prácticas de programación por pares y utilizarás Git de forma fluida en tus proyectos de **MYSD (Modelos y Servicios de Datos)** y **DOPO (Desarrollo Orientado por Objetos)**.

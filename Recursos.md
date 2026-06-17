@@ -6,7 +6,7 @@ permalink: /Recursos/
 ---
 
 # 📚 Recursos y Bibliografía
-> **Línea de Fundamentos de Software** | *IS-FUNDAMENTOS-LEARNING*
+> **Línea de Fundamentos de Software** | *IS-FUNDAMENTOS*
 
 En esta sección encontrarás el material de referencia oficial y herramientas recomendadas para complementar las unidades de aprendizaje.
 
