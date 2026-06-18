@@ -33,7 +33,9 @@ Cada archivo en este repositorio ha sido diseñado con una secuencia didáctica 
 | **[🏠 Home](./home/)** | **Página de Inicio** | Metodología del UA, contexto pedagógico y bienvenida. |
 | **[📦 Unidad 1: CVS](./Unidad-CVS)** | **Control de Versiones** | S1: Teoría de CVS, S2: Buenas Prácticas y S3: Git/GitHub. |
 | **[🧪 Unidad 2: Pruebas](./Unidad-Pruebas)** | **Pruebas Unitarias** | R1: Conceptos BDD, R2: Estándares TDD y R3: JUnit en BlueJ. |
-| **[🗄️ Unidad 3: SQL](./Unidad-SQL/)** | **Oracle SQL** | Configuración de servidor remoto, Oracle XE y VS Code. |
+| **[🗄️ Unidad 3: SQL](./Unidad-SQL/)** | **Gestión de Bases de Datos** | Página principal con conceptos transversales y dos sub-unidades: [Oracle SQL Developer](./Unidad-SQL-Oracle/) y [PostgreSQL en VS Code](./Unidad-SQL-Postgre-VSC/). |
+| **[🔬 Unidad 4: Análisis](./Unidad-Analisis/)** | **Análisis de Software** | S1: Teoría (SonarLint, PMD, JaCoCo, PIT), S2: Práctica por ejemplo y S3/S4 en [Eclipse](./Unidad-Analisis-Eclipse/) y [VS Code](./Unidad-Analisis-VSC/). |
+| **[💻 Guía VS Code Vainilla](./VSCode-Vanila/)** | **Configuración VS Code** | Extensiones para DOPO y MYSD, configuración consciente sin IA y `settings.json` completo. |
 | **[📚 Recursos](./Recursos)** | **Bibliografía** | Enlaces externos, simuladores y documentación oficial. |
 | **[📝 Changelog](./Changelog)** | **Bitácora** | Historial de versiones y mejoras del material educativo. |
 
@@ -41,8 +43,9 @@ Cada archivo en este repositorio ha sido diseñado con una secuencia didáctica 
 
 ## 🛠️ Stack Tecnológico
 Para la realización de las prácticas guiadas y el despliegue del material se utilizaron:
-* **Entornos:** BlueJ (Java), GitHub (CVS), Oracle SQL Developer.
+* **Entornos:** BlueJ → Eclipse IDE / VS Code, GitHub (CVS), Oracle SQL Developer.
 * **Frameworks:** JUnit 4/5 para pruebas de unidad.
+* **Análisis de calidad:** SonarLint, PMD, JaCoCo (EclEmma / Coverage Gutters), PIT (Pitclipse / Maven).
 * **Documentación:** Markdown avanzado con soporte para metadatos (Jekyll) y tema **Just the Docs**.
 
 ---
@@ -63,4 +66,5 @@ Si eres estudiante y encuentras un error o tienes una sugerencia para mejorar es
   <p><strong>Andersson David Sánchez Méndez</strong></p>
   <p>Monitor de Línea - Fundamentos de Ingeniería de Software</p>
   <p>© 2026 - Escuela Colombiana de Ingeniería Julio Garavito</p>
+  <p>Contacto: fis@escuelaing.edu.co</p>
 </div>

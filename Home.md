@@ -34,21 +34,32 @@ Facilitar la apropiación de conceptos fundamentales de ingeniería mediante rec
 * **R2: Buenas Prácticas:** Metodología "Test First" y gestión de bugs.
 * **R3: Herramienta:** Uso de JUnit dentro del ecosistema BlueJ.
 
-### 🗄️ [Unidad 3: Oracle SQL (MYSD)](../Unidad-SQL/)
-*Enfoque: Gestión de bases de datos y entornos de desarrollo.*
-* **Ambientes:** Configuración de servidor remoto (Granate) y local (XE).
-* **Herramientas:** Uso de SQL Developer y extensión oficial para VS Code.
-* **Protocolos:** Vaciado de bases de datos y Troubleshooting de conexión.
+### 🗄️ [Unidad 3: Gestión de Bases de Datos (MYSD)](../Unidad-SQL/)
+*Enfoque: Configuración de entornos y trabajo consciente con SQL.*
+* **[Oracle SQL Developer](../Unidad-SQL-Oracle/):** Servidor Granate, Oracle XE local, protocolo de vaciado y troubleshooting.
+* **[PostgreSQL en VS Code](../Unidad-SQL-Postgre-VSC/):** SQLTools, configuración Vainilla para MYSD y gestión de scripts con Git.
+
+### 🔬 [Unidad 4: Análisis de Software (DOPO)](../Unidad-Analisis/)
+*Enfoque: Evaluación y mejora de la calidad del software.*
+* **S1: Teoría:** Análisis estático (SonarLint, PMD) y dinámico (JaCoCo, PIT).
+* **S2: Práctica por Ejemplo:** Ciclo completo de análisis sobre `CuentaBancaria`.
+* **S3 & S4:** Entornos profesionales — [Eclipse](../Unidad-Analisis-Eclipse/) y [VS Code](../Unidad-Analisis-VSC/).
+
+### 💻 [Guía: VS Code Vainilla](../VSCode-Vanila/)
+*Referencia transversal para DOPO y MYSD.*
+* Extensiones para Java (DOPO) y SQL (MYSD).
+* Configuración "Vainilla": programación consciente sin asistencia de IA.
+* Archivo `settings.json` listo para copiar y pegar.
 
 ---
 
 ## 🛠️ Entorno Tecnológico
 Para garantizar la modularidad y replicabilidad, trabajamos con:
 * **Control de Versiones:** `Git` & `GitHub`
-* **Desarrollo OO:** `Java` & `BlueJ`
+* **Desarrollo OO:** `Java` & `BlueJ` → `Eclipse IDE` / `VS Code`
 * **Bases de Datos:** `Oracle SQL Developer` & `Oracle XE`
 * **Modelado:** Archivos `.asta` (Astah)
-* **Calidad:** `JUnit Framework`
+* **Calidad:** `JUnit` · `SonarLint` · `PMD` · `JaCoCo` · `PIT`
 
 ---
 
