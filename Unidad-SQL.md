@@ -3,124 +3,89 @@ layout: default
 title: "Unidad 3: Oracle SQL"
 nav_order: 5
 permalink: /Unidad-SQL/
+has_children: true
 ---
 
-# 🗄️ Unidad 3: Entornos de Trabajo Oracle SQL
+# 🗄️ Unidad 3: Gestión de Bases de Datos
 > **Línea de Fundamentos de Ingeniería de Software** | *IS-FUNDAMENTOS*
 > Monitoría de **Modelos y Servicios de Datos (MYSD)** 🎓
 
 {: .note }
-> **Resultados de Aprendizaje:** Al finalizar esta unidad, estarás en capacidad de configurar tu entorno de desarrollo, establecer conexiones estables con los servidores de la Escuela y gestionar eficientemente tus scripts de base de datos en ambientes remotos y locales.
+> **Resultados de Aprendizaje:** Al finalizar esta unidad, estarás en capacidad de configurar tu entorno de desarrollo, establecer conexiones estables con los servidores de la Escuela, ejecutar consultas de forma consciente y gestionar eficientemente tus scripts de base de datos en ambientes remotos y locales.
 
 ---
 
-## 🌐 A. Trabajo con el Servidor de la Escuela (Remoto)
+## 🧭 Propósito de la Unidad
 
-Para interactuar con la base de datos centralizada de la universidad, es fundamental configurar correctamente los parámetros de red.
+En MYSD trabajarás con bases de datos relacionales en dos entornos distintos, cada uno con sus propias herramientas y flujos de trabajo. Esta unidad te prepara para dominar ambos:
 
-### Parámetros de Conexión Críticos
-Utiliza la siguiente tabla para configurar tu acceso al servidor **Granate**:
-
-| Campo | Valor |
-| :--- | :--- |
-| **Hostname** | `granate.is.escuelaing.edu.co` |
-| **Port** | `1521` |
-| **SID** | `ORCL` |
-| **Usuario** | `bd` + tu número de identificación |
-| **Contraseña** | Igual al usuario (en minúscula) |
-
-### 🛠️ Configuración en Oracle SQL Developer (App Nativa)
-1. Inicia la aplicación y localiza el panel izquierdo.
-2. Haz clic en el icono verde **Nueva Conexión (+)**.
-3. Ingresa un nombre descriptivo (ej. "Escuela-Remoto").
-4. Completa los datos según la tabla anterior.
-5. Haz clic en **Test**. Si visualizas `Status: Success`, presiona **Connect**.
-
----
-
-## ⚡ B. Alternativa Moderna: SQL Developer para VS Code
-
-Para los estudiantes que prefieren un flujo de trabajo integrado, es posible utilizar Visual Studio Code mediante la extensión oficial de Oracle, pero para este curso no se recomienda por el uso de herramientas de IA para generar el código.
-
-### Pasos para la configuración:
-1. Desde el Marketplace de VS Code, instala: **"Oracle SQL Developer Extension for VSCode"**.
-2. Dirígete al panel de la extensión y selecciona **Create Connection**.
-3. Los parámetros de red (Hostname, Puerto y SID) son **idénticos** a los de la versión de escritorio.
-
-{: .highlight }
-> **Ventaja:** Esta extensión permite gestionar tus scripts `.sql` junto a tu código de aplicación en un único entorno, facilitando el desarrollo por pares y el control de versiones.
-
-
-
----
-
-## 🏠 C. Trabajo en Local (Oracle XE)
-
-Si deseas realizar prácticas privadas o no dispones de conexión a internet (VPN), puedes utilizar **Oracle Express Edition (XE)** instalado en tu propia máquina.
-
-* **Hostname:** `localhost`
-* **Hostname:** `localhost`
-* **Hostname:** `localhost`
-* **Port:** `1521`
-* **SID:** `xe`
-
----
-
-## ✅ D. Protocolo de Vaciado y Buenas Prácticas
+| Entorno | Motor de BD | Herramienta principal | Sub-unidad |
+| :--- | :---: | :--- | :---: |
+| **Servidor de la Escuela y local** | Oracle | Oracle SQL Developer (app nativa) | [Oracle SQL Developer](../Unidad-SQL-Oracle/) |
+| **VS Code + PostgreSQL** | PostgreSQL | VS Code con SQLTools | [PostgreSQL en VS Code](../Unidad-SQL-Postgre-VSC/) |
 
 {: .important }
-> **Protocolo de Vaciado:** El servidor `granate` es un recurso compartido. Al finalizar tu sesión, es responsabilidad del estudiante ejecutar el vaciado de tablas temporales para evitar la saturación del espacio en disco de la base de datos común.
-
-### Problemas Frecuentes (Troubleshooting)
-* **En local:** Verifica que los servicios `OracleServiceXE` y el `Listener` estén iniciados en `services.msc`.
-* **En servidor:** Verifica que tu usuario `bd` no tenga espacios adicionales y que la contraseña esté en minúsculas.
+> Ambos entornos siguen la filosofía de **trabajo consciente**: las consultas se escriben y ejecutan manualmente, sin depender de asistentes automáticos ni generadores de código. Para VS Code, esto se logra con la configuración Vainilla documentada en la **[Guía VS Code Vainilla](../VSCode-Vanila/)**.
 
 ---
 
-## 🖼️ Material de Apoyo Visual
+## 🧠 Conceptos Transversales
 
-Para una explicación visual detallada sobre la instalación y los tipos de conexión, consulta las diapositivas interactivas diseñadas para esta unidad:
+Independientemente del entorno que uses, estos conceptos aplican en cualquier motor de base de datos relacional:
+
+### ¿Qué es un sistema gestor de bases de datos (SGBD)?
+
+Un SGBD es el software que permite crear, administrar y consultar bases de datos. En este curso trabajamos con dos de los más usados en la industria:
+
+* **Oracle Database:** Sistema robusto, muy presente en entornos empresariales y en la academia. El servidor de la Escuela (**Granate**) corre Oracle.
+* **PostgreSQL:** Sistema de código abierto, ampliamente adoptado en la industria moderna y en proyectos de software libre. Se integra naturalmente con VS Code mediante SQLTools.
+
+### Parámetros de Conexión — ¿Qué significan?
+
+Cualquier cliente de base de datos necesita estos datos para establecer una conexión:
+
+| Parámetro | Descripción |
+| :--- | :--- |
+| **Hostname** | Dirección del servidor donde vive la base de datos |
+| **Port** | Puerto de red por el que escucha el SGBD (Oracle: `1521`, PostgreSQL: `5432`) |
+| **SID / Database** | Identificador de la instancia o base de datos específica dentro del servidor |
+| **Usuario** | Cuenta con la que se accede al esquema personal |
+| **Contraseña** | Credencial de autenticación |
+
+### El `.gitignore` en proyectos de MYSD
+
+Cuando combines scripts SQL con un proyecto Java bajo control de versiones, asegúrate de incluir el `.gitignore` estándar de la línea (ver [Unidad 1: CVS](../Unidad-CVS/)):
+
+```text
+*
+!*/
+!*.doc
+!*.java
+!*.asta
+!*.sql
+```
+
+---
+
+## 🛠️ Elige tu Entorno
 
 {: .highlight }
-> 🚀 **Diapositivas de la Unidad:** [Presentación Interactiva - Oracle SQL Developer](https://fis-eci.github.io/software-foundations-eci-slides/OracleSQL-presentation.html#1)
+> ### 🏛️ [Oracle SQL Developer — Entorno Principal](../Unidad-SQL-Oracle/)
+> Conexión al servidor Granate de la Escuela, instalación de Oracle XE para trabajo local, protocolo de vaciado y troubleshooting. Herramienta: Oracle SQL Developer (app nativa).
 
----
-
-## 🎥 Práctica Guiada: Videos para MYSD
-
-Para evidenciar el logro del objetivo, revisa estos tutoriales donde configuramos los entornos de Oracle SQL paso a paso.
-
-### 🛠️ Instalación y Configuración de Oracle SQL Developer
-¿Cómo dejar lista la herramienta principal del curso desde cero? En este tutorial instalamos y configuramos Oracle SQL Developer en cualquier sistema operativo.
-
-* **Herramienta:** Oracle SQL Developer (versión de escritorio).
-* **Conceptos aplicados:** Descarga, instalación y primera ejecución en entornos Windows, Mac y Linux.
-
-📺 **Ver el Video:** [Cómo instalar y configurar Oracle SQL Developer (Multiplataforma)](https://youtu.be/ThTLYnKWSAY)
-
-### 🌐 Conexión al Servidor Granate Oracle DB (Sin VPN)
-¿Cómo acceder al servidor de la Escuela sin necesidad de VPN? En este tutorial establecemos la conexión remota al servidor **Granate** con los parámetros correctos.
-
-* **Caso de estudio:** Configuración de nueva conexión con Hostname, Port y SID de la Escuela.
-* **Conceptos aplicados:** Parámetros de red, prueba de conexión (`Status: Success`) y resolución de errores frecuentes.
-
-📺 **Ver el Video:** [Conexión al Servidor Granate Oracle DB (Sin VPN)](https://youtu.be/zBnge96jiqE)
-
-### 🏠 Oracle Database Express Edition (XE): Tu Laboratorio Local
-¿Cómo practicar sin depender del servidor de la Escuela? En este tutorial configuramos Oracle XE como entorno local para sesiones de trabajo autónomas.
-
-* **Caso de estudio:** Conexión local con `localhost`, puerto `1521` y SID `xe`.
-* **Conceptos aplicados:** Instalación de Oracle XE, verificación de servicios (`OracleServiceXE` y `Listener`) y conexión desde SQL Developer.
-
-📺 **Ver el Video:** [Oracle Database Express Edition (XE): Tu Laboratorio Local](https://youtu.be/cLklOvlBNaM)
+{: .highlight }
+> ### 💻 [PostgreSQL en VS Code — Entorno Moderno](../Unidad-SQL-Postgre-VSC/)
+> Conexión a bases de datos PostgreSQL desde VS Code con SQLTools, bajo la configuración Vainilla de programación consciente. Requiere tener VS Code configurado según la [Guía VS Code Vainilla](../VSCode-Vanila/).
 
 ---
 
 ## 📚 Verificación y Recursos Adicionales
 
 {: .warning }
-> **Pregunta de Verificación:** ¿Cuál es la diferencia principal entre el SID `ORCL` y el SID `xe` en términos de la ubicación física de los datos?
+> **Pregunta de Verificación:** ¿Cuál es la diferencia fundamental entre Oracle Database y PostgreSQL en términos de licenciamiento, puerto de red predeterminado y modelo de identificación de la base de datos (SID vs nombre de base de datos)?
 
-**Enlaces de interés:**
+**Recursos generales:**
 * 📘 [Descarga de Oracle SQL Developer](https://www.oracle.com/database/sqldeveloper/)
 * 📦 [Oracle Database Express Edition (XE)](https://www.oracle.com/database/technologies/xe-downloads.html)
+* 📘 [PostgreSQL — Documentación Oficial](https://www.postgresql.org/docs/)
+* 📘 [SQLTools — VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)
