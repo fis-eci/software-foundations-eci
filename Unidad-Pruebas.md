@@ -74,7 +74,7 @@ BlueJ tiene una integración visual excelente con JUnit. Las clases de prueba se
 Refuerza los conceptos de TDD, BDD y el entorno de BlueJ con el siguiente material gráfico:
 
 {: .highlight }
-> 🚀 **Diapositivas de la Unidad:** [Presentación Interactiva - Pruebas Unitarias (Canva)](https://heliogen.my.canva.site/pruebas-unitarias-dopo)
+> 🚀 **Diapositivas de la Unidad:** [Presentación Interactiva - Pruebas Unitarias](https://fis-eci.github.io/software-foundations-eci-slides/PruebasUnitarias-presentation.html#1)
 
 ---
 

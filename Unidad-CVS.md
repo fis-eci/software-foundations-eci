@@ -98,7 +98,7 @@ Git es el CVS más utilizado en el mundo. Aquí están las acciones básicas map
 Para facilitar el seguimiento de la teoría y los pasos técnicos, puedes consultar las diapositivas interactivas diseñadas para esta unidad:
 
 {: .highlight }
-> 🚀 **Diapositivas de la Unidad:** [Presentación Interactiva - Control de Versiones (Canva)](https://heliogen.my.canva.site/cvs-mysd-dopo)
+> 🚀 **Diapositivas de la Unidad:** [Presentación Interactiva - Control de Versiones](https://fis-eci.github.io/software-foundations-eci-slides/CVS-presentation.html#1)
 
 ---
 
