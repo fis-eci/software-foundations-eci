@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "📚 Recursos y Bibliografía"
-nav_order: 6
+nav_order: 8
 permalink: /Recursos/
 ---
 
@@ -26,6 +26,29 @@ En esta sección encontrarás el material de referencia oficial y herramientas r
 * 📘 [**Descarga de Oracle SQL Developer**](https://www.oracle.com/database/sqldeveloper/): Herramienta principal para MYSD.
 * 📦 [**Oracle Database Express Edition (XE)**](https://www.oracle.com/database/technologies/xe-downloads.html): Para prácticas en ambiente local.
 * 🔌 [**SQL Developer Extension for VS Code**](https://marketplace.visualstudio.com/items?itemName=oracle.sql-developer): Alternativa ligera para desarrollo integrado.
+
+## 🔬 Análisis de Software
+
+### Análisis Estático
+* 🔵 [**SonarLint — Página Oficial**](https://www.sonarsource.com/products/sonarlint/): Documentación del plugin de análisis de diseño en tiempo real.
+* 🟠 [**Reglas PMD para Java**](https://pmd.github.io/latest/pmd_rules_java.html): Catálogo completo de reglas de calidad que detecta PMD.
+* 🔌 [**PMD Eclipse Plugin — Marketplace**](https://marketplace.eclipse.org/content/pmd-eclipse-plugin): Instalación directa del plugin en Eclipse.
+* 🔌 [**SonarLint para Eclipse — Marketplace**](https://marketplace.eclipse.org/content/sonarlint): Instalación directa del plugin en Eclipse.
+
+### Análisis Dinámico — Cobertura
+* 🟢 [**JaCoCo — Java Code Coverage**](https://www.jacoco.org/): Documentación oficial de la herramienta de cobertura.
+* 🔌 [**EclEmma (JaCoCo) — Eclipse Marketplace**](https://marketplace.eclipse.org/content/eclemma-java-code-coverage): Integración de JaCoCo en Eclipse.
+* 🔌 [**Coverage Gutters — VS Code Marketplace**](https://marketplace.visualstudio.com/items?itemName=ryanluker.vscode-coverage-gutters): Visualización de cobertura en VS Code.
+
+### Análisis Dinámico — Mutación
+* 🔴 [**PIT Mutation Testing**](https://pitest.org/): Documentación oficial, guía de uso y referencia de mutadores disponibles.
+* 🔌 [**Pitclipse — Eclipse Marketplace**](https://marketplace.eclipse.org/content/pitclipse): Integración de PIT en Eclipse.
+* 📘 [**Referencia de mutadores PIT**](https://pitest.org/quickstart/mutators/): Lista completa de los cambios artificiales que PIT puede aplicar.
+
+### Entornos de Desarrollo
+* ☕ [**Eclipse IDE for Java Developers**](https://www.eclipse.org/downloads/): Descarga del IDE principal para DOPO.
+* 💻 [**Extension Pack for Java — VS Code**](https://marketplace.visualstudio.com/items?itemName=vscjava.vscode-java-pack): Paquete base de soporte Java en VS Code.
+* 🔌 [**PMD para VS Code — Marketplace**](https://marketplace.visualstudio.com/items?itemName=chuckjonas.apex-pmd): Plugin de análisis estático para VS Code.
 
 ## 🛠️ Herramientas de la Escuela
 * 📐 [**Astah Community/Student**](https://astah.net/): Para el modelado de diagramas de clase y entidad-relación (.asta).
