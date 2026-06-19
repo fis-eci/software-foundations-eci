@@ -22,10 +22,19 @@ En esta sección encontrarás el material de referencia oficial y herramientas r
 * 🧩 [**BlueJ Unit Testing Tutorial**](https://www.bluej.org/tutorial/testing-tutorial.pdf): Guía oficial para el entorno BlueJ.
 * 📖 [**Refactoring.com**](https://refactoring.com/): Conceptos clave para mejorar el código después de que las pruebas pasen.
 
-## 🗄️ Bases de Datos (Oracle SQL)
-* 📘 [**Descarga de Oracle SQL Developer**](https://www.oracle.com/database/sqldeveloper/): Herramienta principal para MYSD.
-* 📦 [**Oracle Database Express Edition (XE)**](https://www.oracle.com/database/technologies/xe-downloads.html): Para prácticas en ambiente local.
-* 🔌 [**SQL Developer Extension for VS Code**](https://marketplace.visualstudio.com/items?itemName=oracle.sql-developer): Alternativa ligera para desarrollo integrado.
+## 🗄️ Bases de Datos (MYSD)
+
+### Oracle SQL Developer
+* 📘 [**Descarga de Oracle SQL Developer**](https://www.oracle.com/database/sqldeveloper/): Herramienta principal para MYSD con Oracle.
+* 📦 [**Oracle Database Express Edition (XE)**](https://www.oracle.com/database/technologies/xe-downloads.html): Para prácticas en ambiente local con Oracle.
+* 📖 [**Documentación Oracle Database**](https://docs.oracle.com/en/database/): Referencia oficial del motor Oracle.
+
+### PostgreSQL con VS Code
+* 🐘 [**PostgreSQL — Documentación Oficial**](https://www.postgresql.org/docs/): Referencia completa del motor PostgreSQL.
+* 📦 [**Descarga PostgreSQL Local**](https://www.postgresql.org/download/): Instalador multiplataforma para ambiente local.
+* 🔌 [**SQLTools — VS Code Marketplace**](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools): Extensión base para gestión de bases de datos en VS Code.
+* 🔌 [**SQLTools PostgreSQL Driver — Marketplace**](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools-driver-pg): Driver específico para conectar SQLTools con PostgreSQL.
+* 📖 [**Tutorial SQL: W3Schools**](https://www.w3schools.com/sql/): Referencia práctica de sintaxis SQL estándar.
 
 ## 🔬 Análisis de Software
 
