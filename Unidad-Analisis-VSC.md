@@ -157,7 +157,7 @@ PIT en VS Code se ejecuta como herramienta externa mediante Maven, ya que no exi
 * **Caso de estudio:** Clase `CuentaBancaria` con incidentes reales de los cuatro análisis.
 * **Conceptos aplicados:** Lectura de reportes, selección y justificación de incidentes, solución y análisis comparativo final.
 
-📺 **Ver el Video:** *(Próximamente)*
+📺 **Ver el Video:** [Análisis de Software en VS Code: SonarLint, PMD, JaCoCo y PIT en Acción](https://youtu.be/N29OODjHMUE)
 
 ---
 
