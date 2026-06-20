@@ -161,7 +161,7 @@ Para una explicación visual detallada sobre la configuración de VS Code con SQ
 * **Herramientas:** VS Code, SQLTools, SQLTools PostgreSQL Driver.
 * **Conceptos aplicados:** Instalación de extensiones, configuración Vainilla para MYSD, creación de conexión y prueba de acceso.
 
-📺 **Ver el Video:** *(Próximamente)*
+📺 **Ver el Video:** [Cómo configurar VS Code con SQLTools para PostgreSQL (Entorno Vainilla)](https://youtu.be/OtQBMtXYGBw)
 
 ### 🗄️ Flujo de Trabajo SQL en VS Code: Consultas Conscientes
 ¿Cómo escribir, organizar y ejecutar scripts SQL en VS Code de forma profesional? En este tutorial trabajamos con un esquema real, gestionamos los scripts con Git y ejecutamos consultas manualmente.
@@ -169,7 +169,7 @@ Para una explicación visual detallada sobre la configuración de VS Code con SQ
 * **Caso de estudio:** Creación y consulta de un esquema de base de datos relacional.
 * **Conceptos aplicados:** DDL y DML manuales, exploración del esquema en SQLTools, versionado de scripts `.sql`.
 
-📺 **Ver el Video:** *(Próximamente)*
+📺 **Ver el Video:** [Consultas SQL Conscientes en VS Code: Scripts, DDL, DML y Git](https://youtu.be/YgQrHChPF0o)
 
 ---
 
