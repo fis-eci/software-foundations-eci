@@ -181,7 +181,7 @@ SonarLint funciona **en tiempo real** dentro de Eclipse: subraya problemas direc
 * **Herramientas:** Eclipse IDE, Marketplace, plugins de análisis.
 * **Conceptos aplicados:** Gestión del workspace, instalación de plugins, verificación de entorno.
 
-📺 **Ver el Video:** *(Próximamente)*
+📺 **Ver el Video:** [Cómo instalar Eclipse IDE y configurar SonarLint, PMD, JaCoCo y PIT](https://youtu.be/Gq7Tz84vEDk)
 
 ### 🔬 Los Cuatro Análisis en Acción sobre `CuentaBancaria`
 ¿Cómo pasar de BlueJ a Eclipse y ejecutar el ciclo completo de análisis? En este tutorial importamos el proyecto, ejecutamos los cuatro análisis y resolvemos los incidentes encontrados.
@@ -189,7 +189,7 @@ SonarLint funciona **en tiempo real** dentro de Eclipse: subraya problemas direc
 * **Caso de estudio:** Clase `CuentaBancaria` con incidentes reales de SonarLint, PMD, JaCoCo y PIT.
 * **Conceptos aplicados:** Lectura de reportes, selección y justificación de incidentes, solución y análisis final comparativo.
 
-📺 **Ver el Video:** *(Próximamente)*
+📺 **Ver el Video:** [Análisis de Software en Eclipse: SonarLint, PMD, JaCoCo y PIT en Acción](https://youtu.be/t2J1zNvKKKU)
 
 ---
 
