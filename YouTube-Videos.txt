@@ -1,0 +1,155 @@
+TÍTULOS Y DESCRIPCIONES PARA YOUTUBE — IS-FUNDAMENTOS
+Monitoría · Escuela Colombiana de Ingeniería Julio Garavito
+========================================================
+
+
+════════════════════════════════════════════════════════
+VIDEO 1
+════════════════════════════════════════════════════════
+
+TÍTULO:
+Cómo instalar Eclipse IDE y configurar SonarLint, PMD, JaCoCo y PIT | DOPO
+
+DESCRIPCIÓN:
+¿Listo para pasar de BlueJ a un entorno profesional? En este tutorial instalamos Eclipse IDE for Java Developers y configuramos los cuatro plugins de análisis de software que usarás en el curso DOPO: SonarLint, PMD, EclEmma (JaCoCo) y Pitclipse (PIT).
+
+Al finalizar tendrás el entorno listo para detectar problemas de diseño, calidad, cobertura y mutación en tu proyecto Java.
+
+⏱️ CONTENIDO
+00:00 Introducción
+00:30 Descarga e instalación de Eclipse IDE
+02:30 Instalación de SonarLint (análisis de diseño)
+04:30 Instalación de PMD Eclipse Plugin (análisis de calidad)
+06:00 Instalación de EclEmma / JaCoCo (cobertura)
+07:30 Instalación de Pitclipse / PIT (mutación)
+09:00 Verificación del entorno completo
+
+🔗 RECURSOS
+📖 Guía completa de la unidad: https://fis-eci.github.io/software-foundations-eci/Unidad-Analisis-Eclipse/
+⬇️ Eclipse IDE: https://www.eclipse.org/downloads/
+
+📌 Monitoría IS-FUNDAMENTOS · Escuela Colombiana de Ingeniería Julio Garavito
+Línea: Fundamentos de Ingeniería de Software · Curso: DOPO
+
+#Eclipse #JavaDeveloper #SonarLint #PMD #JaCoCo #PIT #DOPO #IngenieriadeSoftware #EscuelaColombiana
+
+
+════════════════════════════════════════════════════════
+VIDEO 2
+════════════════════════════════════════════════════════
+
+TÍTULO:
+Análisis de Software en Eclipse: SonarLint, PMD, JaCoCo y PIT en Acción | DOPO
+
+DESCRIPCIÓN:
+¿Tu código compila pero tiene problemas ocultos? En este tutorial ejecutamos los cuatro análisis de software sobre una clase CuentaBancaria con defectos intencionales: un operador incorrecto, código muerto, ramas sin cubrir y pruebas débiles.
+
+Para cada análisis seguimos el flujo completo: leer el reporte → seleccionar el incidente → justificarlo → corregirlo → verificar el resultado.
+
+⏱️ CONTENIDO
+00:00 Introducción y proyecto de ejemplo
+01:30 Importar proyecto BlueJ en Eclipse
+03:00 🔵 SonarLint: detectar & vs && (análisis de diseño)
+06:00 🟠 PMD: detectar código muerto (análisis de calidad)
+09:00 🟢 JaCoCo / EclEmma: cobertura de ramas
+13:00 🔴 PIT / Pitclipse: mutantes supervivientes
+17:00 Comparativa análisis inicial vs. final
+
+🔗 RECURSOS
+📖 Guía completa de la unidad: https://fis-eci.github.io/software-foundations-eci/Unidad-Analisis-Eclipse/
+📖 Teoría de los cuatro análisis: https://fis-eci.github.io/software-foundations-eci/Unidad-Analisis/
+
+📌 Monitoría IS-FUNDAMENTOS · Escuela Colombiana de Ingeniería Julio Garavito
+Línea: Fundamentos de Ingeniería de Software · Curso: DOPO
+
+#AnalisisDeSoftware #Eclipse #SonarLint #PMD #JaCoCo #PIT #PruebasUnitarias #DOPO #IngenieriadeSoftware
+
+
+════════════════════════════════════════════════════════
+VIDEO 3
+════════════════════════════════════════════════════════
+
+TÍTULO:
+Análisis de Software en VS Code: SonarLint, PMD, JaCoCo y PIT en Acción | DOPO
+
+DESCRIPCIÓN:
+¿Prefieres trabajar desde VS Code? En este tutorial ejecutamos los mismos cuatro análisis del curso DOPO — SonarLint, PMD, JaCoCo con Coverage Gutters y PIT con Maven — sobre la clase CuentaBancaria, siguiendo el flujo completo de detección, justificación y corrección de incidentes.
+
+Requisito: tener VS Code configurado con la filosofía Vainilla y las extensiones del curso instaladas (ver enlace abajo).
+
+⏱️ CONTENIDO
+00:00 Introducción y apertura del proyecto
+01:00 🔵 SonarLint: incidente en tiempo real
+03:30 🟠 PMD: análisis de calidad con PMD: Run
+06:00 🟢 JaCoCo + Coverage Gutters: visualización de cobertura
+10:00 🔴 PIT con Maven: reporte de mutación HTML
+15:00 Comparativa análisis inicial vs. final
+
+🔗 RECURSOS
+📖 Guía completa de la unidad: https://fis-eci.github.io/software-foundations-eci/Unidad-Analisis-VSC/
+📖 Configuración VS Code Vainilla: https://fis-eci.github.io/software-foundations-eci/VSCode-Vanila/
+
+📌 Monitoría IS-FUNDAMENTOS · Escuela Colombiana de Ingeniería Julio Garavito
+Línea: Fundamentos de Ingeniería de Software · Curso: DOPO
+
+#VSCode #AnalisisDeSoftware #SonarLint #PMD #JaCoCo #CoverageGutters #PIT #Maven #DOPO #IngenieriadeSoftware
+
+
+════════════════════════════════════════════════════════
+VIDEO 4
+════════════════════════════════════════════════════════
+
+TÍTULO:
+Cómo configurar VS Code con SQLTools para PostgreSQL (Entorno Vainilla) | MYSD
+
+DESCRIPCIÓN:
+En este tutorial configuramos VS Code como entorno de trabajo para bases de datos PostgreSQL en el curso MYSD, siguiendo la filosofía Vainilla: sin autocompletado automático, sin asistentes de consultas, con control explícito de cada instrucción SQL.
+
+Instalamos SQLTools y el driver de PostgreSQL, aplicamos la configuración Vainilla específica para MYSD y establecemos la primera conexión al servidor del curso.
+
+⏱️ CONTENIDO
+00:00 Introducción y filosofía Vainilla para MYSD
+01:00 Instalación de SQLTools y PostgreSQL Driver
+03:00 Configuración Vainilla en settings.json para MYSD
+05:00 Crear la conexión a PostgreSQL paso a paso
+08:00 Explorar el esquema y desconectar correctamente
+
+🔗 RECURSOS
+📖 Guía completa de la sub-unidad: https://fis-eci.github.io/software-foundations-eci/Unidad-SQL-Postgre-VSC/
+📖 Configuración VS Code Vainilla completa: https://fis-eci.github.io/software-foundations-eci/VSCode-Vanila/
+⬇️ SQLTools: https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools
+
+📌 Monitoría IS-FUNDAMENTOS · Escuela Colombiana de Ingeniería Julio Garavito
+Línea: Fundamentos de Ingeniería de Software · Curso: MYSD
+
+#VSCode #PostgreSQL #SQLTools #MYSD #BasesdeDatos #IngenieriadeSoftware #EscuelaColombiana
+
+
+════════════════════════════════════════════════════════
+VIDEO 5
+════════════════════════════════════════════════════════
+
+TÍTULO:
+Consultas SQL Conscientes en VS Code: Scripts, DDL, DML y Git | MYSD
+
+DESCRIPCIÓN:
+¿Cómo trabajar con scripts SQL de forma profesional desde VS Code? En este tutorial escribimos DDL y DML manualmente sobre un esquema relacional real, ejecutamos consultas de forma explícita con SQLTools y versionamos los scripts con Git siguiendo las buenas prácticas del curso.
+
+También aplicamos el protocolo de limpieza responsable en servidores compartidos.
+
+⏱️ CONTENIDO
+00:00 Introducción y estructura del proyecto (src/ + scripts/)
+01:00 DDL: crear tablas cliente y cuenta manualmente
+04:00 Ejecutar con Ctrl+Shift+E y verificar en el esquema
+05:00 DML: INSERT y SELECT manuales
+07:00 Versionado de scripts .sql con Git (commits atómicos)
+09:30 Limpieza con TRUNCATE y desconexión correcta
+
+🔗 RECURSOS
+📖 Guía completa de la sub-unidad: https://fis-eci.github.io/software-foundations-eci/Unidad-SQL-Postgre-VSC/
+📖 Buenas prácticas de Git: https://fis-eci.github.io/software-foundations-eci/Unidad-CVS/
+
+📌 Monitoría IS-FUNDAMENTOS · Escuela Colombiana de Ingeniería Julio Garavito
+Línea: Fundamentos de Ingeniería de Software · Curso: MYSD
+
+#VSCode #PostgreSQL #SQL #SQLTools #Git #DDL #DML #MYSD #BasesdeDatos #IngenieriadeSoftware
