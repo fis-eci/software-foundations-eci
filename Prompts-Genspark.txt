@@ -1,0 +1,1050 @@
+PROMPTS PARA GENSPARK.AI — DIAPOSITIVAS IS-FUNDAMENTOS
+Escuela Colombiana de Ingeniería Julio Garavito
+=========================================================
+INSTRUCCIONES ANTES DE USAR:
+- Cada prompt es independiente. Usa uno por sesión en Genspark.
+- El output esperado es una carpeta con archivos HTML numerados: 1-slide.html, 2-slide.html, etc.
+- Después de generar, ejecuta build_presentations.py en el repo software-foundations-eci-slides.
+=========================================================
+
+
+╔═══════════════════════════════════════════════════════════╗
+║  PROMPT 1 — Analisis-Eclipse-presentation                 ║
+║  Carpeta destino: "Analisis Software Eclipse - DOPO"      ║
+║  Archivo final: Analisis-Eclipse-presentation.html        ║
+╚═══════════════════════════════════════════════════════════╝
+
+Crea una presentación de diapositivas HTML interactiva profesional para una monitoría universitaria de ingeniería de software en la Escuela Colombiana de Ingeniería Julio Garavito. El tema es "Análisis de Software en Eclipse IDE" para el curso DOPO (Desarrollo Orientado por Objetos).
+
+=== ESPECIFICACIONES TÉCNICAS OBLIGATORIAS ===
+- Cada diapositiva es un archivo HTML INDEPENDIENTE y AUTOCONTENIDO.
+- Nómbralos: 1-slide.html, 2-slide.html, 3-slide.html ... hasta 15-slide.html
+- Dimensión fija: 1280px × 720px. NO responsive. overflow: hidden en body.
+- CERO JavaScript. Solo HTML5 + CSS3 puro.
+- Todos los estilos van DENTRO del archivo en etiquetas <style>. PROHIBIDO CSS externo.
+- CDNs permitidos solo para fuentes e iconos:
+  * Google Fonts: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400;700&display=swap
+  * Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+- Formato del <title> de cada archivo: el tema de esa diapositiva en español.
+
+=== PALETA DE COLORES — TEMA ECLIPSE + JAVA ===
+- Fondo principal: #0D1117 (GitHub dark — igual que las otras presentaciones del curso)
+- Fondo secundario (header, cards): #161B22
+- Fondo terciario (cards internas): #21262D
+- Bordes: #30363D
+- Texto principal: #FFFFFF
+- Texto secundario: #C9D1D9
+- Texto tenue: #8B949E
+- Color primario — Java Orange: #F89820
+- Color secundario — Eclipse Purple: #7C5CBF
+- Color terciario — Analysis Blue: #58A6FF
+- Verde (JaCoCo cubierto): #2EA44F
+- Rojo (PIT/PMD crítico): #DA3633
+- Amarillo (cobertura parcial): #D29922
+- Grid background: líneas rgba(48,54,61,0.3) cada 40px
+
+=== ELEMENTOS VISUALES CONSTANTES EN TODAS LAS SLIDES ===
+1. Fondo con patrón de cuadrícula (grid lines rgba(48,54,61,0.3), background-size: 40px 40px)
+2. Header bar superior (height: 80px, background: #161B22, border-bottom: 1px solid #30363D)
+   - Izquierda: badge de color + título de la sección
+   - NO poner numeración de slide en el header
+3. Barra decorativa inferior (height: 6px, 3 segmentos: #F89820 | #7C5CBF | #58A6FF)
+4. Footer discreto en esquina inferior derecha: "DOPO • Análisis de Software • Eclipse IDE" en Roboto Mono 11px color #484F58
+5. Iconos Font Awesome relevantes al contenido de cada slide
+
+=== SLIDE 1 — PORTADA ===
+Título: "Análisis de Software en Eclipse IDE"
+Diseño: slide de portada centrada, SIN header bar (usa el espacio completo).
+Elementos:
+- Badge superior: "UNIDAD DE APRENDIZAJE • NIVEL PROFESIONAL" en #F89820 con borde naranja semitransparente
+- Título principal (font-size: 62px, bold, color #FFFFFF): "Análisis de Software en" + salto de línea + "Eclipse IDE" con "Eclipse IDE" en color #F89820
+- Subtítulo (font-size: 22px, color #8B949E): "Guía para estudiantes de DOPO — De BlueJ al entorno profesional"
+- 4 tarjetas horizontales inferiores con borde-top de color y ícono:
+  * Tarjeta 1 (borde #4A90D9 = SonarLint blue): ícono fa-search, "SonarLint", "Diseño"
+  * Tarjeta 2 (borde #F89820): ícono fa-shield-halved, "PMD", "Calidad"
+  * Tarjeta 3 (borde #2EA44F): ícono fa-chart-bar, "JaCoCo", "Cobertura"
+  * Tarjeta 4 (borde #DA3633): ícono fa-dna, "PIT", "Mutación"
+- Author box pill: avatar "A" en círculo naranja + "Andersson David Sánchez Méndez" + "Monitor DOPO"
+- Íconos decorativos semitransparentes (opacity 0.07): fa-java grande en esquina superior izquierda, fa-eclipse o fa-code en esquina inferior derecha
+- Barra bottom tricolor
+- Efecto glow naranja en esquina superior derecha y glow morado en esquina inferior izquierda (box-shadow sobre divs circulares absolutos)
+
+=== SLIDE 2 — PROPÓSITO Y RESULTADOS DE APRENDIZAJE ===
+Header badge: "PROPÓSITO" en #F89820 | Título header: "¿Para qué sirve esta unidad?"
+Layout: 2 columnas (izquierda: propósito + contexto | derecha: 3 resultados de aprendizaje)
+Columna izquierda:
+- Sección "Propósito": caja con borde-left #F89820 (4px), fondo rgba(248,152,32,0.08)
+  Texto: "Dominar las herramientas de análisis de software profesionales para detectar, medir y resolver problemas de diseño, calidad, cobertura y mutación en proyectos Java reales."
+- Sección "Contexto": 2 mini-cards en grid 2x1:
+  * Card "Pedagógico": ícono fa-university color #7C5CBF, "Curso DOPO", tag "Aprendizaje Activo"
+  * Card "Tecnológico": ícono fa-laptop-code color #F89820, "Eclipse IDE + 4 Plugins"
+Columna derecha (fondo #161B22, border-radius 12px):
+- Título sección "RESULTADOS DE APRENDIZAJE" en Roboto Mono uppercase color #58A6FF
+- 3 items con número circular azul (#1F6FEB):
+  1. "Explica los conceptos del análisis de software" — sub: "Diferencia análisis estático de dinámico e identifica sus herramientas."
+  2. "Interpreta reportes y resuelve incidentes" — sub: "Lee resultados de SonarLint, PMD, JaCoCo y PIT y aplica correcciones justificadas."
+  3. "Utiliza herramientas profesionales" — sub: "Configura y ejecuta los cuatro análisis dentro de Eclipse IDE."
+
+=== SLIDE 3 — DE BLUEJ A ECLIPSE ===
+Header badge: "CONTEXTO" en #7C5CBF | Título: "De BlueJ a Eclipse: La Transición Profesional"
+Layout: diseño comparativo izquierda vs. derecha con flecha central
+Izquierda — BlueJ (fondo #161B22, borde #30363D):
+- Ícono fa-graduation-cap grande en #8B949E
+- Título "BlueJ" color #8B949E
+- Lista de características: "Diseñado para enseñanza introductoria", "Sin plugins de análisis", "Proyectos simples y visuales", "Ideal para aprender OOP"
+- Tag inferior "ENTORNO ANTERIOR"
+Centro:
+- Flecha fa-arrow-right grande en #F89820 con texto "Ahora en DOPO"
+Derecha — Eclipse IDE (fondo rgba(248,152,32,0.05), borde #F89820):
+- Ícono fa-tools grande en #F89820
+- Título "Eclipse IDE" color #F89820
+- Lista de características resaltadas: "Entorno de producción real", "Marketplace con plugins de análisis", "Gestión de classpath y dependencias", "Integración nativa con SonarLint, PMD, JaCoCo, PIT"
+- Tag inferior verde "ENTORNO PROFESIONAL"
+Nota inferior centrada (fondo rgba(88,166,255,0.08), borde-top #58A6FF): "Esta transición es el S3 del curso: llevar tu proyecto a un entorno real y medirlo con herramientas de la industria."
+
+=== SLIDE 4 — INSTALACIÓN DE ECLIPSE ===
+Header badge: "INSTALACIÓN" en #F89820 | Título: "Paso 1: Instalar Eclipse IDE for Java Developers"
+Layout: 4 pasos horizontales tipo pipeline con conectores
+Paso 1 (ícono fa-download, color #58A6FF):
+  Título: "Descargar"
+  Sub: "eclipse.org/downloads → Eclipse IDE for Java Developers"
+Paso 2 (ícono fa-play-circle, color #F89820):
+  Título: "Instalar"
+  Sub: "Ejecuta el instalador. Acepta ruta por defecto → Install → Launch"
+Paso 3 (ícono fa-folder-open, color #7C5CBF):
+  Título: "Workspace"
+  Sub: "Selecciona o crea la carpeta donde vivirán tus proyectos DOPO"
+Paso 4 (ícono fa-check-circle, color #2EA44F):
+  Título: "Verificar"
+  Sub: "Eclipse abre sin errores y muestra la ventana Welcome"
+Conectores: líneas horizontales punteadas entre pasos en color #30363D
+Nota importante inferior (fondo rgba(210,153,34,0.1), borde-left #D29922, ícono fa-triangle-exclamation):
+  "Requisito: JDK 11 o JDK 17 debe estar instalado antes de abrir Eclipse. Verifica con java -version en terminal."
+
+=== SLIDE 5 — LOS 4 PLUGINS DE ANÁLISIS ===
+Header badge: "PLUGINS" en #7C5CBF | Título: "Paso 2: Instalar Plugins via Eclipse Marketplace"
+Instrucción superior: "Help → Eclipse Marketplace... → Busca cada plugin → Install → Restart Now (uno a uno)"
+Layout: 4 tarjetas grandes en fila 2x2 (grid), cada una con color de acento propio:
+
+Card 1 — SonarLint (borde #4A90D9, ícono fa-search color #4A90D9):
+  Búsqueda: `SonarLint`
+  Propósito: "Análisis de diseño en tiempo real"
+  Descripción: "Subraya problemas en el editor mientras escribes, sin ejecutar comandos."
+  Tag: "ESTÁTICO"
+
+Card 2 — PMD Eclipse Plugin (borde #F89820, ícono fa-shield-halved color #F89820):
+  Búsqueda: `PMD Eclipse Plugin`
+  Propósito: "Análisis de calidad y malas prácticas"
+  Descripción: "Detecta código muerto, catches vacíos, variables no usadas y más."
+  Tag: "ESTÁTICO"
+
+Card 3 — EclEmma / JaCoCo (borde #2EA44F, ícono fa-chart-bar color #2EA44F):
+  Búsqueda: `EclEmma`
+  Propósito: "Pruebas de cobertura integradas"
+  Descripción: "Colorea el código (verde/rojo/amarillo) según qué líneas y ramas ejecutan las pruebas."
+  Tag: "DINÁMICO"
+
+Card 4 — Pitclipse / PIT (borde #DA3633, ícono fa-dna color #DA3633):
+  Búsqueda: `Pitclipse`
+  Propósito: "Pruebas de mutación"
+  Descripción: "Introduce errores artificiales para verificar que tus pruebas los detectan."
+  Tag: "DINÁMICO"
+
+Nota: "⚠️ Reinicia Eclipse después de cada plugin instalado para evitar conflictos."
+
+=== SLIDE 6 — FLUJO DE TRABAJO BÁSICO ===
+Header badge: "FLUJO" en #2EA44F | Título: "Operaciones Fundamentales en Eclipse"
+Layout: 4 filas con ícono + acción + comando, estilo terminal/código
+Fila 1 (ícono fa-cogs color #58A6FF): "COMPILAR" — "Automático al guardar. Manual: Project → Build Project" — tag "build path"
+Fila 2 (ícono fa-file-code color #7C5CBF): "DOCUMENTAR" — "Project → Generate Javadoc... → selecciona carpeta de destino" — tag "javadoc"
+Fila 3 (ícono fa-play color #F89820): "EJECUTAR" — "Clic derecho sobre clase con main → Run As → Java Application" — tag "JVM"
+Fila 4 (ícono fa-vial color #2EA44F): "PROBAR (JUnit)" — "Clic derecho sobre clase Test → Run As → JUnit Test" — tag "JUnit 4"
+Cada fila: fondo alterno #161B22 / #21262D, borde-left del color del ícono
+Bloque de código inferior estilo Roboto Mono (fondo #0D1117, borde #30363D):
+  Código Java de ejemplo del main a agregar:
+  public static void main(String[] args) {
+      Contest contest = new Contest();
+      contest.simular();
+  }
+
+=== SLIDE 7 — PANORAMA: LOS 4 ANÁLISIS ===
+Header badge: "ANÁLISIS" en #F89820 | Título: "Los Cuatro Pilares del Análisis de Software"
+Layout: diagrama visual tipo cuadrante 2x2 con líneas divisorias
+Cuadrante superior izquierdo (fondo rgba(74,144,217,0.1), borde #4A90D9):
+  Etiqueta esquina: "ESTÁTICO 1"
+  Ícono fa-search grande (80px) color #4A90D9
+  "SonarLint"
+  Pregunta: "¿El software cumple los principios de buen diseño?"
+Cuadrante superior derecho (fondo rgba(248,152,32,0.1), borde #F89820):
+  Etiqueta: "ESTÁTICO 2"
+  Ícono fa-shield-halved grande color #F89820
+  "PMD"
+  Pregunta: "¿El código no presenta defectos ni malas prácticas?"
+Cuadrante inferior izquierdo (fondo rgba(46,164,79,0.1), borde #2EA44F):
+  Etiqueta: "DINÁMICO 1"
+  Ícono fa-chart-bar grande color #2EA44F
+  "JaCoCo"
+  Pregunta: "¿Qué código está realmente siendo probado?"
+Cuadrante inferior derecho (fondo rgba(218,54,51,0.1), borde #DA3633):
+  Etiqueta: "DINÁMICO 2"
+  Ícono fa-dna grande color #DA3633
+  "PIT"
+  Pregunta: "¿Las pruebas realmente detectan errores?"
+Centro (intersección de los 4 cuadrantes): badge circular con texto "CuentaBancaria" indicando el caso de estudio
+
+=== SLIDE 8 — SONARLINT: ANÁLISIS DE DISEÑO ===
+Header badge: "ANÁLISIS 1" en color #4A90D9 con borde | Título: "🔵 SonarLint — Análisis de Diseño en Tiempo Real"
+Layout: 2 columnas
+Columna izquierda — Cómo activar y usar:
+  - Sección "Activar la Vista": pasos numerados (1: Window → Show View → Other → SonarLint → On-The-Fly Issues; 2: La vista muestra incidentes con tipo, severidad, descripción y línea)
+  - Mini-tabla "Flujo de Resolución" con 5 filas:
+    1. Identifica el incidente de mayor severidad
+    2. Clic → navega a la línea afectada
+    3. Lee la descripción de la regla violada
+    4. Aplica la corrección o justifica
+    5. Verifica que desaparece al guardar
+Columna derecha — Caso de estudio:
+  - Bloque de código mostrando el bug detectado (fondo #0D1117, fuente Roboto Mono):
+    public void retirar(double monto) {
+        if (monto > 0 & monto <= saldo) {  // ← SonarLint subraya esto
+            saldo = saldo - monto;
+        }
+    }
+  - Flecha hacia abajo con label "CORRECCIÓN"
+  - Bloque de código corregido:
+    if (monto > 0 && monto <= saldo) {  // ✅ AND lógico, no bit a bit
+  - Etiqueta del incidente: "Use '&&' instead of '&'" en badge rojo
+
+Bloque inferior "ACTIVIDAD": fondo rgba(248,152,32,0.08), borde-left #F89820
+  Texto: "⏸️ Pausa el video cuando aparezca el primer subrayado de SonarLint. ¿Puedes predecir la corrección antes de verla?"
+
+=== SLIDE 9 — PMD: ANÁLISIS DE CALIDAD ===
+Header badge: "ANÁLISIS 2" en #F89820 | Título: "🟠 PMD — Análisis de Calidad y Malas Prácticas"
+Layout: arriba → cómo ejecutar | centro → tabla de prioridades | abajo → caso de estudio
+
+Cómo ejecutar (3 pasos horizontales):
+  1. Clic derecho sobre el proyecto
+  2. PMD → Check Code
+  3. Vista PMD Violations → ordenar por columna P
+
+Tabla de prioridades (3 filas con fondo de color):
+  Prioridad 1 | 🔴 Rojo | Problema crítico — posible bug real | RESOLVER SIEMPRE
+  Prioridad 2 | 🟠 Naranja | Problema importante de calidad | Resolver o justificar
+  Prioridad 3-5 | 🟡 Amarillo | Problema menor o de estilo | Evaluar según contexto
+
+Caso de estudio (fondo #161B22, borde-left #F89820):
+  Código detectado:
+    private void metodoInterno() {  // ← PMD: Unused private method
+        System.out.println("debug");
+    }
+  Diagnóstico: "Código muerto. Viola YAGNI (You Aren't Gonna Need It)."
+  Solución: "Eliminar el método por completo."
+
+Bloque "ACTIVIDAD" inferior: "⏸️ Antes de ver la solución del monitor, escribe en papel tu propuesta de corrección."
+
+=== SLIDE 10 — ECLEMMA / JACOCO: COBERTURA ===
+Header badge: "ANÁLISIS 3" en #2EA44F | Título: "🟢 EclEmma (JaCoCo) — Pruebas de Cobertura"
+Layout: izquierda → cómo ejecutar + leyenda de colores | derecha → código coloreado simulado + métricas
+
+Izquierda:
+  Cómo ejecutar:
+    1. Clic derecho sobre la clase Test
+    2. Coverage As → JUnit Test
+    3. Eclipse colorea automáticamente el código
+
+  Leyenda de colores (3 filas con borde-left):
+    🟢 Verde (borde #2EA44F) | "Línea ejecutada por las pruebas"
+    🔴 Rojo (borde #DA3633) | "Línea NO ejecutada — cobertura pendiente"
+    🟡 Amarillo (borde #D29922) | "Rama parcialmente cubierta (solo if, sin else)"
+
+Derecha:
+  Simulación visual del código coloreado (fondo #0D1117, Roboto Mono):
+    [VERDE]  public void consignar(double monto) {
+    [VERDE]      if (monto > 0) {
+    [VERDE]          saldo = saldo + monto;
+    [VERDE]      }
+    [VERDE]  }
+    [VERDE]  public void retirar(double monto) {
+    [AMARILLO]   if (monto > 0 && monto <= saldo) {  ← rama parcial
+    [VERDE]          saldo = saldo - monto;
+    [ROJO]   }
+
+  Mini dashboard de métricas (3 badges):
+    Line Coverage: 85% (barra verde)
+    Branch Coverage: 60% (barra amarilla)  ← ¡Atención!
+    Method Coverage: 100%
+
+Bloque "ACTIVIDAD" inferior verde: "⏸️ Identifica la línea amarilla antes de que el monitor la señale. ¿Qué caso de prueba falta?"
+
+=== SLIDE 11 — PITCLIPSE / PIT: MUTACIÓN ===
+Header badge: "ANÁLISIS 4" en #DA3633 | Título: "🔴 Pitclipse (PIT) — Pruebas de Mutación"
+Layout: arriba → concepto | centro → tabla de resultados | abajo → caso de estudio
+
+Concepto visual (3 pasos con flechas):
+  [Tu código] → [PIT introduce mutante] → [¿Las pruebas fallan?]
+  Si SÍ → "Killed ✅ — Prueba eficaz" (verde)
+  Si NO → "Survived ❌ — Prueba débil" (rojo)
+
+Cómo ejecutar:
+  Clic derecho sobre proyecto → PIT → PIT Mutation Test
+  Nota: "Puede tardar varios minutos. El reporte se abre en el navegador interno."
+
+Tabla de resultados (3 filas):
+  Killed | 🟢 Verde | Mutante detectado — prueba eficaz
+  Survived | 🔴 Rojo | Mutante no detectado — prueba débil
+  No coverage | ⚪ Gris | Línea sin ninguna prueba asociada
+
+Caso de estudio — mutante superviviente:
+  PIT cambió: monto > 0  →  monto >= 0 (en consignar)
+  Ninguna prueba lo detectó → Survived ❌
+  Solución:
+    @Test
+    public void shouldNotConsignarWhenMontoCero() {
+        CuentaBancaria cuenta = new CuentaBancaria();
+        cuenta.consignar(0.0);
+        assertEquals(0.0, cuenta.getSaldo(), 0.01);
+    }
+
+Bloque "ACTIVIDAD" rojo: "⏸️ Cuando veas un mutante Survived, pausa y escribe la prueba que lo mataría."
+
+=== SLIDE 12 — S4: IMPORTAR PROYECTO Y COMPILAR ===
+Header badge: "S4 PRÁCTICA" en #7C5CBF | Título: "Cierre del Proyecto: Importar de BlueJ a Eclipse"
+Layout: 2 columnas
+
+Columna izquierda — Importar el Proyecto:
+  4 pasos numerados:
+  1. File → Import → General → Existing Projects into Workspace
+  2. Select root directory → carpeta raíz del proyecto BlueJ → Finish
+  3. Verifica vista Problems: sin errores rojos
+  4. Si hay errores de JDK: Window → Preferences → Java → Installed JREs → agregar JDK 11/17
+
+Columna derecha — Verificar el Entorno:
+  Checklist visual (ícono fa-check-square color #2EA44F por cada ítem completado):
+  ☑ Proyecto importado sin errores de compilación
+  ☑ Clase principal ejecuta correctamente (Run As → Java Application)
+  ☑ Pruebas JUnit pasan (Run As → JUnit Test — barra verde)
+  ☑ Javadoc generado (Project → Generate Javadoc)
+
+  Bloque de código si falta el main:
+    public static void main(String[] args) {
+        Contest contest = new Contest();
+        contest.simular();
+    }
+
+Nota inferior (borde #7C5CBF): "Solo cuando el entorno esté completamente verificado, procede con los cuatro análisis."
+
+=== SLIDE 13 — S4: PROTOCOLO DE 5 ETAPAS ===
+Header badge: "S4 PROTOCOLO" en #7C5CBF | Título: "Ciclo de Análisis: Las 5 Etapas para cada Herramienta"
+Layout: 5 etapas en pipeline vertical (flujo de arriba a abajo con conectores)
+
+Etapa i — Análisis Inicial (ícono fa-play, color #58A6FF):
+  "Ejecuta la herramienta y registra TODOS los incidentes encontrados en una tabla."
+Etapa ii — Interpretación (ícono fa-magnifying-glass, color #F89820):
+  "Lee cada incidente. Clasifícalo por prioridad o impacto potencial en tu proyecto."
+Etapa iii — Selección (ícono fa-bullseye, color #7C5CBF):
+  "Elige el incidente más relevante. Justifica por escrito: ¿Por qué este y no otro?"
+Etapa iv — Solución (ícono fa-wrench, color #2EA44F):
+  "Aplica la corrección en el código. Documenta el razonamiento detrás de tu decisión."
+Etapa v — Análisis Final (ícono fa-chart-line, color #DA3633):
+  "Re-ejecuta la herramienta. Compara y documenta: estado inicial vs. estado final."
+
+Conectores entre etapas: líneas verticales punteadas en #30363D con flechas
+
+Bloque de entregable esperado (fondo rgba(88,166,255,0.08), borde #58A6FF):
+  Ícono fa-file-alt color #58A6FF
+  "Para cada análisis entrega: tabla inicial | incidente seleccionado con justificación | código antes y después | tabla final"
+
+=== SLIDE 14 — VIDEOS DE PRÁCTICA GUIADA ===
+Header badge: "PRÁCTICA" en #2EA44F | Título: "🎥 Videos de Práctica Guiada"
+Layout: 2 tarjetas de video grandes (una encima de la otra o lado a lado)
+
+Tarjeta Video 1 (borde #F89820):
+  Ícono fa-play-circle grande (color #F89820)
+  Título: "Instalación de Eclipse + 4 Plugins"
+  Descripción: "Instala Eclipse IDE for Java Developers y configura SonarLint, PMD, EclEmma y Pitclipse desde cero."
+  Link visible: https://youtu.be/Gq7Tz84vEDk
+  Tag "VIDEO 1 • DOPO"
+
+Tarjeta Video 2 (borde #DA3633):
+  Ícono fa-play-circle grande (color #DA3633)
+  Título: "Los 4 Análisis en Acción: CuentaBancaria"
+  Descripción: "Importa el proyecto BlueJ, ejecuta los cuatro análisis y resuelve los incidentes paso a paso."
+  Link visible: https://youtu.be/t2J1zNvKKKU
+  Tag "VIDEO 2 • DOPO"
+
+Nota inferior (fondo #161B22):
+  Ícono fa-lightbulb color #D29922
+  "Usa las actividades ⏸️ de cada slide para pausar y practicar antes de ver la solución en el video."
+
+=== SLIDE 15 — VERIFICACIÓN Y RECURSOS ===
+Header badge: "CIERRE" en #F89820 | Título: "Verificación Final y Recursos"
+Layout: 2 columnas
+
+Columna izquierda — Pregunta de Verificación:
+  Caja prominente (fondo rgba(210,153,34,0.1), borde-left #D29922, ícono fa-question-circle):
+  "Después de ejecutar PIT, encuentras que el mutante saldo > 0 → saldo >= 0 en el método retirar() sobrevivió."
+  "¿Qué prueba unitaria exacta agregarías para eliminarlo?"
+  "Escríbela completa con la nomenclatura shouldXWhenY y estructura BDD (Given/When/Then)."
+
+Columna derecha — Recursos:
+  Lista de recursos con iconos:
+  🔗 Eclipse IDE: eclipse.org/downloads
+  🔌 SonarLint Marketplace: marketplace.eclipse.org (buscar SonarLint)
+  🔌 PMD Plugin: marketplace.eclipse.org (buscar PMD Eclipse Plugin)
+  🔌 EclEmma: marketplace.eclipse.org (buscar EclEmma)
+  🔌 Pitclipse: marketplace.eclipse.org (buscar Pitclipse)
+  📖 Wiki IS-FUNDAMENTOS: fis-eci.github.io/software-foundations-eci/Unidad-Analisis-Eclipse/
+
+Frase de cierre centrada en la parte inferior:
+  "Los resultados del análisis apoyan la toma de decisiones, pero no sustituyen el juicio del ingeniero de software."
+  en cursiva, color #8B949E
+
+=== FIN PROMPT 1 ===
+
+
+
+
+╔═══════════════════════════════════════════════════════════╗
+║  PROMPT 2 — Analisis-VSC-presentation                     ║
+║  Carpeta destino: "Analisis Software VSCode - DOPO"       ║
+║  Archivo final: Analisis-VSC-presentation.html            ║
+╚═══════════════════════════════════════════════════════════╝
+
+Crea una presentación de diapositivas HTML interactiva profesional para una monitoría universitaria de ingeniería de software en la Escuela Colombiana de Ingeniería Julio Garavito. El tema es "Análisis de Software en Visual Studio Code" para el curso DOPO (Desarrollo Orientado por Objetos).
+
+=== ESPECIFICACIONES TÉCNICAS OBLIGATORIAS ===
+- Cada diapositiva es un archivo HTML INDEPENDIENTE y AUTOCONTENIDO.
+- Nómbralos: 1-slide.html, 2-slide.html ... hasta 13-slide.html
+- Dimensión fija: 1280px × 720px. NO responsive. overflow: hidden en body.
+- CERO JavaScript. Solo HTML5 + CSS3 puro.
+- Todos los estilos van DENTRO del archivo en etiquetas <style>. PROHIBIDO CSS externo.
+- CDNs permitidos:
+  * Google Fonts: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400;700&display=swap
+  * Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+
+=== PALETA DE COLORES — TEMA VS CODE ===
+- Fondo principal: #0D1117
+- Fondo secundario: #161B22
+- Fondo terciario: #21262D
+- Bordes: #30363D
+- Texto principal: #FFFFFF
+- Texto secundario: #C9D1D9
+- Texto tenue: #8B949E
+- Color primario — VS Code Blue: #007ACC
+- Color secundario — Activity Bar: #333333
+- Color acento — Electric Blue: #4FC3F7
+- Verde (cobertura/correcto): #2EA44F
+- Rojo (error/survived): #DA3633
+- Amarillo (advertencia): #D29922
+- Naranja (PMD): #F89820
+- Grid background: líneas rgba(48,54,61,0.3) cada 40px
+
+=== ELEMENTOS VISUALES CONSTANTES ===
+1. Fondo cuadrícula (grid-lines rgba(48,54,61,0.3), background-size: 40px 40px)
+2. Header bar (height: 80px, fondo #161B22, borde-bottom 1px solid #30363D)
+   - Badge de sección en #007ACC + título de la slide
+3. Barra bottom tricolor: #007ACC | #4FC3F7 | #2EA44F (6px)
+4. Footer: "DOPO • Análisis de Software • VS Code" Roboto Mono 11px #484F58
+5. Ícono decorativo de VS Code (fa-code o similar) semitransparente en slides internas
+
+=== SLIDE 1 — PORTADA ===
+Sin header bar. Diseño centrado completo.
+- Badge: "UNIDAD DE APRENDIZAJE • NIVEL PROFESIONAL" en #007ACC
+- Título (62px bold): "Análisis de Software en" + salto + "Visual Studio Code" (en #007ACC)
+- Subtítulo (22px, color #8B949E): "Guía para estudiantes de DOPO — Entorno moderno con filosofía Vainilla"
+- 4 mini-tarjetas horizontales con íconos y colores:
+  * SonarLint (borde #4A90D9): fa-search, "SonarLint", "Diseño"
+  * PMD (borde #F89820): fa-shield-halved, "PMD", "Calidad"
+  * JaCoCo (borde #2EA44F): fa-chart-bar, "JaCoCo + Coverage Gutters", "Cobertura"
+  * PIT (borde #DA3633): fa-dna, "PIT + Maven", "Mutación"
+- Author box pill: "A" en círculo #007ACC + "Andersson David Sánchez Méndez" + "Monitor DOPO"
+- Íconos decorativos semitransparentes: fa-code grande en esquina superior derecha, icono VS Code inferido o fa-terminal inferior izquierda
+- Efecto glow azul (box-shadow) en esquina superior derecha
+
+=== SLIDE 2 — PRERREQUISITOS Y EXTENSIONES ===
+Header badge: "PRERREQUISITOS" en #007ACC | Título: "Antes de Empezar: Extensiones Requeridas"
+Layout: arriba → 2 prerrequisitos como badges | abajo → tabla de extensiones
+
+Prerrequisitos (2 cards horizontales):
+  Card 1 (ícono fa-check-circle color #2EA44F, borde-top #2EA44F):
+    "Teoría completada"
+    "Has estudiado la Unidad 4 principal: los 4 análisis y el ejemplo CuentaBancaria."
+  Card 2 (ícono fa-sliders color #007ACC, borde-top #007ACC):
+    "VS Code Vainilla configurado"
+    "Tienes el settings.json aplicado según la Guía VS Code Vainilla del curso."
+
+Tabla de extensiones (6 filas, fondo alterno #161B22 / #21262D):
+  | Extensión | Propósito en esta unidad |
+  | Extension Pack for Java | Compilación, ejecución y gestión del proyecto |
+  | Java Test Runner | Ejecución de pruebas JUnit desde VS Code |
+  | JaCoCo (herramienta externa) | Generación del reporte de cobertura |
+  | Coverage Gutters | Visualización de cobertura en el editor |
+  | PMD | Análisis estático de calidad |
+  | SonarLint | Análisis de diseño en tiempo real |
+
+Nota inferior: "Si alguna extensión falta, instálala desde el panel de extensiones (Ctrl+Shift+X) siguiendo la Guía VS Code Vainilla."
+
+=== SLIDE 3 — PANORAMA: LOS 4 ANÁLISIS EN VS CODE ===
+Header badge: "PANORAMA" en #007ACC | Título: "Los 4 Análisis — Cómo se Ejecutan en VS Code"
+Layout: tabla comparativa de 4 filas mostrando la diferencia de ejecución vs. Eclipse
+
+Fila de encabezados: "Herramienta" | "Cómo ejecutar en VS Code" | "Ver resultado en"
+Fila 1 (SonarLint, ícono color #4A90D9): "Automático al escribir/guardar" | "Vista Problems (Ctrl+Shift+M)"
+Fila 2 (PMD, ícono color #F89820): "Ctrl+Shift+P → PMD: Run" | "Vista Problems (Ctrl+Shift+M)"
+Fila 3 (JaCoCo, ícono color #2EA44F): "Panel Testing 🧪 → Run All Tests → Coverage Gutters: Display Coverage" | "Líneas coloreadas en el editor"
+Fila 4 (PIT, ícono color #DA3633): "Terminal: mvn pitest:mutationCoverage" | "target/pit-reports/index.html en el navegador"
+
+Nota inferior izquierda (borde #007ACC):
+  "Caso de estudio: clase CuentaBancaria con dos defectos intencionales — el mismo ejemplo de la Unidad 4."
+
+=== SLIDE 4 — SONARLINT EN VS CODE ===
+Header badge: "ANÁLISIS 1" en #4A90D9 | Título: "🔵 SonarLint — Análisis de Diseño en Tiempo Real"
+Layout: 2 columnas
+
+Columna izquierda — Cómo funciona en VS Code:
+  "SonarLint analiza automáticamente al escribir y guardar. No requiere ejecutar ningún comando."
+  4 pasos:
+  1. Los problemas aparecen subrayados en el editor según severidad
+  2. Ctrl+Shift+M abre la vista Problems con todos los incidentes por archivo
+  3. Clic sobre el incidente → navega a la línea afectada
+  4. El panel de SonarLint describe la regla y sugiere corrección
+
+  Mini-tabla "Flujo de Resolución" (4 filas):
+  1. Identifica incidente de mayor severidad en Problems
+  2. Navega → lee la regla violada
+  3. Documenta: ¿Por qué es relevante? ¿Qué principio viola?
+  4. Aplica → verifica que el subrayado desaparece
+
+Columna derecha — Demo visual:
+  Simulación de la vista Problems de VS Code (fondo #1E1E1E — tema VS Code oscuro):
+    [error] CuentaBancaria.java [line 8] — SonarLint: "Use '&&' instead of non short-circuit operator '&'"
+  Código con "subrayado" (borde-bottom rojo punteado simulado):
+    if (monto > 0 & monto <= saldo) {  ← subrayado
+  Corrección aplicada:
+    if (monto > 0 && monto <= saldo) {  ✅
+
+Bloque Actividad (borde #F89820): "⏸️ Pausa cuando veas el subrayado. ¿Puedes escribir la corrección antes de que el monitor lo haga?"
+
+=== SLIDE 5 — PMD EN VS CODE ===
+Header badge: "ANÁLISIS 2" en #F89820 | Título: "🟠 PMD — Análisis de Calidad vía Paleta de Comandos"
+Layout: izquierda → pasos de ejecución | derecha → resultado y corrección
+
+Izquierda:
+  Simulación de la Paleta de Comandos VS Code (fondo #3C3C3C, borde-radius 8px):
+    > PMD: Run
+    Resultado: "PMD: Run on current file" ← seleccionado
+  3 pasos:
+  1. Ctrl+Shift+P → escribe PMD: Run
+  2. Selecciona el archivo o carpeta a analizar
+  3. Los resultados aparecen en la vista Problems clasificados por severidad
+
+  Flujo de resolución (5 filas):
+  1 → Ordena por severidad en la vista Problems
+  2 → Selecciona el incidente más relevante
+  3 → Documenta: ¿Qué principio viola?
+  4 → Aplica la corrección
+  5 → Re-ejecuta PMD: Run → confirma que desapareció
+
+Derecha:
+  Incidente detectado (card con borde #F89820):
+    "UnusedPrivateMethod: Avoid unused private methods such as 'metodoInterno'."
+  Código con el problema:
+    private void metodoInterno() {  // ← nunca llamado
+        System.out.println("debug");
+    }
+  Corrección: [Eliminar el método completo]
+  Resultado: "PMD: 0 violations found ✅"
+
+Bloque Actividad: "⏸️ Antes de ver la solución, escribe en papel tu propuesta de corrección."
+
+=== SLIDE 6 — JACOCO + COVERAGE GUTTERS ===
+Header badge: "ANÁLISIS 3" en #2EA44F | Título: "🟢 JaCoCo + Coverage Gutters — Pruebas de Cobertura"
+Layout: arriba → 2 pasos secuenciales | abajo → resultado visual
+
+Paso 1 — Ejecutar las pruebas (ícono fa-vial color #2EA44F):
+  "Panel de Testing 🧪 en la barra lateral → Run All Tests"
+  "JaCoCo genera automáticamente jacoco.xml en target/ o coverage/"
+
+Flecha grande → hacia el Paso 2
+
+Paso 2 — Visualizar la cobertura (ícono fa-eye color #007ACC):
+  "Ctrl+Shift+P → Coverage Gutters: Display Coverage"
+  "El editor colorea las líneas automáticamente"
+
+Leyenda de colores (3 items horizontales):
+  🟢 Verde — "Línea ejecutada por las pruebas"
+  🔴 Rojo — "Línea NO ejecutada — cobertura pendiente"
+
+Simulación visual del editor coloreado (estilo VS Code, fondo #1E1E1E):
+  [barra verde] public void consignar(double monto) {
+  [barra verde]     if (monto > 0) {
+  [barra verde]         saldo = saldo + monto;
+  [barra roja]  }   ← rama else implícita sin cubrir
+  [barra verde] public void retirar(double monto) {
+  [barra roja]      if (monto > 0 && monto <= saldo) {  ← rama parcial
+
+Nota (borde #D29922): "Si Coverage Gutters no encuentra el reporte, verifica que 'Coverage Gutters: Coverage Base Dir' apunte a la carpeta del jacoco.xml."
+Bloque Actividad: "⏸️ Identifica las líneas rojas antes de que el monitor las señale. ¿Qué caso de prueba falta?"
+
+=== SLIDE 7 — PIT CON MAVEN ===
+Header badge: "ANÁLISIS 4" en #DA3633 | Título: "🔴 PIT con Maven — Pruebas de Mutación"
+Layout: izquierda → configuración pom.xml | derecha → ejecución e interpretación
+
+Izquierda — Configurar pom.xml:
+  Bloque de código (Roboto Mono, fondo #0D1117):
+  <plugin>
+    <groupId>org.pitest</groupId>
+    <artifactId>pitest-maven</artifactId>
+    <version>1.15.0</version>
+    <configuration>
+      <targetClasses>
+        <param>com.tupackage.*</param>
+      </targetClasses>
+      <targetTests>
+        <param>com.tupackage.*Test</param>
+      </targetTests>
+    </configuration>
+  </plugin>
+  Nota: "Este bloque va dentro de <build><plugins>...</plugins></build>"
+
+Derecha — Ejecución e interpretación:
+  Simulación de terminal VS Code (fondo #1E1E1E, texto verde):
+    $ mvn pitest:mutationCoverage
+    [INFO] Scanning for projects...
+    [INFO] Generated 12 mutations
+    [INFO] 10 mutations killed (83%)
+    [INFO] BUILD SUCCESS
+
+  Tabla resultado:
+  Killed | 🟢 | 10/12 — pruebas eficaces
+  Survived | 🔴 | 2/12 — pruebas débiles ← acción requerida
+
+  Mutante superviviente detectado:
+    monto > 0  →  monto >= 0
+    Ninguna prueba falló → Survived ❌
+
+  Solución:
+    @Test
+    public void shouldNotConsignarWhenMontoCero() {
+        cuenta.consignar(0.0);
+        assertEquals(0.0, cuenta.getSaldo(), 0.01);
+    }
+
+Bloque Actividad rojo: "⏸️ Cuando veas un mutante Survived, pausa y escribe la prueba que lo mataría."
+
+=== SLIDE 8 — S4: ABRIR PROYECTO Y FLUJO DE TRABAJO ===
+Header badge: "S4 PRÁCTICA" en #7C5CBF | Título: "Cierre del Proyecto: Abrir y Verificar en VS Code"
+Layout: izquierda → pasos para abrir el proyecto | derecha → tabla de operaciones
+
+Izquierda — Abrir el Proyecto:
+  3 pasos:
+  1. File → Open Folder → carpeta raíz del proyecto
+  2. VS Code detecta el proyecto Java automáticamente (Extension Pack for Java)
+  3. Ctrl+Shift+M — verifica que la vista Problems no tenga errores rojos
+
+  Nota (borde #DA3633): "Si VS Code no detecta el proyecto, asegúrate de que la carpeta contenga los .java o la estructura src/com/tupackage/"
+
+Derecha — Tabla de Operaciones:
+  | Acción | Cómo hacerlo en VS Code |
+  | Compilar | Automático al guardar (java.autobuild.enabled: true) |
+  | Documentar | Terminal: javadoc -d docs src/*.java |
+  | Ejecutar | Clic ▶ Run sobre el método main, o presiona F5 |
+  | Probar | Panel Testing 🧪 → Run All Tests |
+
+  Bloque de código (si falta el main):
+  public static void main(String[] args) {
+      Contest contest = new Contest();
+      contest.simular();
+  }
+
+=== SLIDE 9 — S4: PROTOCOLO DE 5 ETAPAS ===
+[Mismo contenido y diseño que Slide 13 de la presentación de Eclipse, adaptado al contexto VS Code]
+Header badge: "S4 PROTOCOLO" en #007ACC | Título: "Ciclo de Análisis: Las 5 Etapas para cada Herramienta"
+5 etapas en pipeline vertical con íconos y colores idénticos al de Eclipse.
+Entregable esperado en bloque azul inferior.
+
+=== SLIDE 10 — COMPARATIVA: ECLIPSE VS VS CODE ===
+Header badge: "COMPARATIVA" en #4FC3F7 | Título: "Eclipse vs. VS Code — Diferencias Clave de Análisis"
+Layout: tabla comparativa 4 filas × 3 columnas
+
+Encabezados: "Análisis" | "Eclipse" | "VS Code"
+SonarLint | Vista On-The-Fly Issues nativa | Vista Problems (Ctrl+Shift+M)
+PMD | Menú contextual PMD → Check Code | Ctrl+Shift+P → PMD: Run
+JaCoCo | Coverage As → JUnit Test | Run All Tests → Coverage Gutters: Display Coverage
+PIT | Plugin Pitclipse nativo (clic derecho) | Maven: mvn pitest:mutationCoverage (terminal)
+
+Nota inferior (borde #007ACC): "El flujo de resolución y el protocolo de 5 etapas son IDÉNTICOS en ambos entornos. Solo cambia la forma de ejecutar, no la lógica."
+
+Columna lateral derecha con badge: "El resultado del análisis no depende del IDE — depende de la calidad de tu código y tus pruebas."
+
+=== SLIDE 11 — VIDEO DE PRÁCTICA GUIADA ===
+Header badge: "PRÁCTICA" en #2EA44F | Título: "🎥 Video de Práctica Guiada"
+Layout: tarjeta de video grande centrada
+
+Tarjeta grande (borde #007ACC, fondo rgba(0,122,204,0.08)):
+  Ícono fa-play-circle enorme (100px) en #007ACC
+  Título: "Los 4 Análisis en Acción en VS Code: SonarLint, PMD, JaCoCo y PIT"
+  Descripción: "Abrimos el proyecto CuentaBancaria, ejecutamos los cuatro análisis y resolvemos los incidentes encontrados, siguiendo el protocolo de 5 etapas en cada herramienta."
+  Herramientas cubiertas: SonarLint | PMD: Run | Coverage Gutters | mvn pitest:mutationCoverage
+  Link visible (Roboto Mono): https://youtu.be/N29OODjHMUE
+  Tag "VIDEO 3 • DOPO"
+
+Bloque inferior de referencia cruzada:
+  "¿Prefieres Eclipse? Ver el Video 2 (Análisis en Eclipse): https://youtu.be/t2J1zNvKKKU"
+
+=== SLIDE 12 — VERIFICACIÓN Y RECURSOS ===
+[Mismo diseño que el cierre de la presentación Eclipse, con pregunta de verificación idéntica pero adaptada al contexto VS Code]
+Header badge: "CIERRE" en #007ACC | Título: "Verificación Final y Recursos"
+Columna izquierda — Pregunta de verificación (misma del Eclipse):
+  "Tienes la configuración Vainilla activa pero VS Code sigue mostrando sugerencias de métodos Java. ¿Qué ajuste en settings.json es específico para Java?"
+Columna derecha — Recursos:
+  💻 Guía VS Code Vainilla: fis-eci.github.io/software-foundations-eci/VSCode-Vanila/
+  📘 Extension Pack for Java
+  📘 Coverage Gutters
+  📘 PMD para VS Code
+  📘 PIT Mutation Testing: pitest.org
+  📘 JaCoCo: jacoco.org
+  📖 Wiki: fis-eci.github.io/software-foundations-eci/Unidad-Analisis-VSC/
+
+=== SLIDE 13 — CONTACTO Y SOPORTE ===
+[Igual que el slide 16 de CVS — diseño de tarjetas de contacto]
+Header badge: "SOPORTE" en #D29922 | Título: "¿Tienes Dudas o Problemas?"
+2 tarjetas: GitHub Issues (@fis-eci) + Correo (fis@escuelaing.edu.co)
+Footer: "DOPO • Análisis de Software • VS Code"
+
+=== FIN PROMPT 2 ===
+
+
+
+
+╔═══════════════════════════════════════════════════════════╗
+║  PROMPT 3 — SQL-PostgreVSC-presentation                   ║
+║  Carpeta destino: "SQL PostgreSQL VSCode - MYSD"          ║
+║  Archivo final: SQL-PostgreVSC-presentation.html          ║
+╚═══════════════════════════════════════════════════════════╝
+
+Crea una presentación de diapositivas HTML interactiva profesional para una monitoría universitaria de ingeniería de software en la Escuela Colombiana de Ingeniería Julio Garavito. El tema es "PostgreSQL en VS Code — Entorno Moderno MYSD" para el curso MYSD (Modelos y Servicios de Datos).
+
+=== ESPECIFICACIONES TÉCNICAS OBLIGATORIAS ===
+- Cada diapositiva es un archivo HTML INDEPENDIENTE y AUTOCONTENIDO.
+- Nómbralos: 1-slide.html, 2-slide.html ... hasta 12-slide.html
+- Dimensión fija: 1280px × 720px. NO responsive. overflow: hidden en body.
+- CERO JavaScript. Solo HTML5 + CSS3 puro.
+- Todos los estilos van DENTRO del archivo en etiquetas <style>. PROHIBIDO CSS externo.
+- CDNs permitidos:
+  * Google Fonts: https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Roboto+Mono:wght@400;700&family=JetBrains+Mono:wght@400;700&display=swap
+  * Font Awesome: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+
+=== PALETA DE COLORES — TEMA POSTGRESQL + VS CODE ===
+- Fondo principal: #0a0e1a (deep dark navy — similar al Oracle SQL del curso)
+- Fondo secundario: #0d1b3e
+- Fondo terciario: rgba(255,255,255,0.05) — efecto glass
+- Bordes: rgba(255,255,255,0.1)
+- Texto principal: #F0F4F8
+- Texto secundario: #C9D1D9
+- Texto tenue: #8B949E
+- Color primario — PostgreSQL Blue: #336791
+- Color secundario — PostgreSQL Light Blue: #4FC3F7
+- Color acento VS Code: #007ACC
+- Verde (éxito/correcto): #00FF88 con versión sólida #00C96E
+- Naranja (advertencia): #FF6B35
+- Neon Cyan: #00D4FF
+- Rojo (error): #FF4444
+- Grid fondo: líneas rgba(79,195,247,0.1) cada 40px
+
+=== NOTA DE ESTILO ===
+Esta presentación sigue el estilo visual de "Oracle SQL Developer - MYSD" que ya existe en el repo:
+- Fondo oscuro tipo espacio profundo (#0a0e1a)
+- Elementos "glassmorphism" (fondos rgba semitransparentes con backdropFilter)
+- Tipografía mixta: Roboto para texto + JetBrains Mono para código y badges
+- Elementos decorativos: círculos con borde punteado, glow dots, code watermark en el fondo
+- Cards flotantes con información técnica clave
+- Estética tech/cyberpunk pero institucional
+
+=== ELEMENTOS VISUALES CONSTANTES ===
+1. Fondo con cuadrícula de líneas rgba(79,195,247,0.1) cada 40px
+2. Overlay oscuro sobre fondo
+3. Círculos decorativos con borde punteado (tech-circles) en #4FC3F7 y #336791 con opacity 0.1
+4. Glow dots: puntos circulares (8px) con box-shadow de color, posicionados absolutamente
+5. Header bar (height: 80px, fondo rgba(13,27,62,0.9), borde-bottom rgba(79,195,247,0.2))
+   - Badge tipo "chip" en JetBrains Mono + título de sección
+6. Barra bottom tricolor (6px): #336791 | #4FC3F7 | #007ACC
+7. Footer: "MYSD • PostgreSQL • VS Code" en JetBrains Mono 11px color rgba(255,255,255,0.3)
+
+=== SLIDE 1 — PORTADA ===
+Sin header bar. Diseño completo con elementos decorativos de toda la pantalla.
+Elementos:
+- Institution badge (fondo glass, borde-left #336791):
+  Ícono fa-university | "ESCUELA COLOMBIANA DE INGENIERÍA JULIO GARAVITO"
+- Título principal estilo Orbitron/bold (no usar Orbitron si no está disponible, usar Roboto 900):
+  Línea 1 (blanco, 56px): "GUÍA:"
+  Línea 2 (color #4FC3F7, 72px): "POSTGRESQL"
+  Línea 3 (blanco, 40px, weight 300): "en Visual Studio Code"
+- Subtítulo (JetBrains Mono, color #8B949E): "Entorno Moderno para MYSD — Consultas Conscientes sin IA"
+- 3 info-items horizontales (badge glass con borde-left de color):
+  * (borde #4FC3F7, ícono fa-database): "Fundamentos de Ingeniería de Software"
+  * (borde #00FF88, ícono fa-check-circle, color verde): "Unidad de Aprendizaje · MYSD"
+  * (borde #FF6B35, ícono fa-user, color naranja): "Andersson David Sánchez Méndez — Monitor MYSD"
+- 2 floating cards a la derecha:
+  Card 1 (borde #4FC3F7): ícono fa-server | "Servidor Escuela" | "Host:5432/postgres"
+  Card 2 (borde #FF6B35): ícono fa-hard-drive | "Local" | "localhost:5432/postgres"
+- Code watermark de fondo (opacity 0.06, JetBrains Mono, color #4FC3F7, esquina derecha):
+  SELECT * FROM estudiantes WHERE curso = 'MYSD';
+  -- Conectando al servidor...
+  CREATE TABLE aprendizaje (id SERIAL PRIMARY KEY, tema VARCHAR);
+  GRANT CONNECT TO student;
+- Círculos decorativos tipo Oracle SQL slide y glow dots
+- Barra bottom tricolor
+
+=== SLIDE 2 — ¿POR QUÉ POSTGRESQL CON VS CODE? ===
+Header badge: "PROPÓSITO" | Título: "¿Por Qué PostgreSQL con VS Code para MYSD?"
+Layout: 4 tarjetas en grid 2×2, cada una con ícono grande, título y descripción
+
+Card 1 (borde-top #4FC3F7, ícono fa-layer-group color #4FC3F7):
+  "Entorno Unificado"
+  "Gestiona scripts .sql, código Java y control de versiones desde una sola ventana de VS Code."
+
+Card 2 (borde-top #2EA44F, ícono fa-code-branch color #2EA44F):
+  "Integración con Git"
+  "Los archivos .sql conviven con el proyecto y se versionan con las buenas prácticas de la Unidad CVS."
+
+Card 3 (borde-top #007ACC, ícono fa-brain color #007ACC):
+  "Aprendizaje Consciente"
+  "SQLTools está configurado para ejecución manual. Sin asistentes ni generadores automáticos de consultas."
+
+Card 4 (borde-top #FF6B35, ícono fa-globe color #FF6B35):
+  "Portabilidad"
+  "PostgreSQL corre en Windows, Mac y Linux. La versión local es gratuita — equivalente a Oracle XE."
+
+Bloque inferior (fondo glass, borde #4FC3F7):
+  Ícono fa-elephant (PostgreSQL logo alternativo: fa-database)
+  "PostgreSQL es uno de los motores de bases de datos relacionales más adoptados en la industria moderna."
+
+=== SLIDE 3 — FILOSOFÍA VAINILLA EN MYSD ===
+Header badge: "FILOSOFÍA" | Título: "La Filosofía Vainilla: Programación Consciente"
+Layout: diseño de 3 principios verticales con barra divisoria izquierda de color + sección derecha de qué evitar
+
+Principio central (caja grande superior, fondo glass, borde #4FC3F7):
+  Ícono fa-brain grande (color #4FC3F7)
+  "En IS-FUNDAMENTOS, VS Code se configura para DESACTIVAR la asistencia automática de IA."
+  "El objetivo: aprender a escribir SQL línea a línea con comprensión total de cada instrucción."
+
+3 reglas Vainilla para MYSD (3 filas con borde-left de color):
+  🔵 (borde #4FC3F7): "Sin autocompletado SQL avanzado — Desactivar en la configuración de SQLTools"
+  🟠 (borde #FF6B35): "Sin asistentes visuales de consultas — No usar generadores de queries"
+  🟢 (borde #2EA44F): "Ejecución siempre manual — Ctrl+Shift+E, nunca 'ejecutar todo'"
+
+Sección lateral — Lo que NO se hace:
+  Lista con ícono fa-times-circle en rojo:
+  ✗ GitHub Copilot generando el SELECT
+  ✗ Botón "Run All" sin revisar las sentencias
+  ✗ Asistentes de construcción de tablas visuales
+  ✗ Autocompletado agresivo de nombres de columnas
+
+Referencia: "Configuración completa: Guía VS Code Vainilla → sección MYSD (PostgreSQL)"
+
+=== SLIDE 4 — EXTENSIONES: SQLTOOLS ===
+Header badge: "EXTENSIONES" | Título: "Instalar SQLTools + Driver PostgreSQL"
+Layout: 2 tarjetas principales grandes + pasos de instalación
+
+Tarjeta 1 — SQLTools (borde #4FC3F7, ícono fa-database grande):
+  Tipo: BASE
+  "SQLTools — Matheus Teixeira"
+  "Gestión de conexiones, escritura y ejecución manual de consultas SQL en VS Code."
+
+Tarjeta 2 — Driver PostgreSQL (borde #336791, ícono fa-plug grande):
+  Tipo: COMPLEMENTO
+  "SQLTools PostgreSQL/Cockroach Driver"
+  "Habilita la conexión específica con bases de datos PostgreSQL desde SQLTools."
+
+Pasos de instalación (4 pasos horizontales con conectores):
+  1. Ctrl+Shift+X (abre panel extensiones)
+  2. Busca "SQLTools" → instala de Matheus Teixeira
+  3. Busca "SQLTools PostgreSQL" → instala el driver
+  4. Recarga VS Code cuando lo solicite
+
+Nota importante (borde #D29922, ícono fa-triangle-exclamation):
+  "Antes de continuar, aplica la configuración Vainilla para MYSD según la Guía VS Code Vainilla del curso."
+
+=== SLIDE 5 — PARÁMETROS DE CONEXIÓN: SERVIDOR ===
+Header badge: "CONEXIÓN REMOTA" | Título: "A. Conexión al Servidor PostgreSQL de la Escuela"
+Layout: tabla de parámetros + pasos para crear la conexión + nota clave
+
+Tabla de parámetros (fondo glass, borde #4FC3F7):
+  | Campo | Valor |
+  | Connection Name | "Escuela-Postgre" (nombre descriptivo) |
+  | Server / Host | Dirección del servidor (proporcionada por el profesor) |
+  | Port | 5432 (puerto estándar de PostgreSQL) |
+  | Database | Nombre de la base de datos asignada |
+  | Username | Tu usuario de acceso |
+  | Password | Tu contraseña de acceso |
+
+Diferencia clave vs. Oracle (caja con borde #FF6B35, ícono fa-lightbulb):
+  "En PostgreSQL NO existe el concepto de SID como en Oracle."
+  "La base de datos se identifica directamente por su NOMBRE (campo Database)."
+  "Cada estudiante trabaja dentro de su propio esquema."
+
+5 pasos para crear la conexión:
+  1. Ícono de SQLTools en barra lateral → Add New Connection
+  2. Seleccionar PostgreSQL
+  3. Completar el formulario con los parámetros de la tabla
+  4. Test Connection → "Connected successfully"
+  5. Save Connection
+
+=== SLIDE 6 — PARÁMETROS: POSTGRESQL LOCAL ===
+Header badge: "CONEXIÓN LOCAL" | Título: "B. Trabajo en Local — PostgreSQL Instalado en tu Máquina"
+Layout: izquierda → parámetros | derecha → pasos de instalación
+
+Izquierda — Parámetros locales (tabla glass con borde #336791):
+  | Campo | Valor |
+  | Server / Host | localhost |
+  | Port | 5432 |
+  | Database | postgres (por defecto) |
+  | Username | postgres (administrador) |
+  | Password | La que asignaste al instalar |
+
+Derecha — Instalar PostgreSQL local:
+  4 pasos:
+  1. Descargar de postgresql.org/download (multiplataforma)
+  2. Ejecutar instalador → anotar la contraseña del usuario postgres
+  3. Verificar servicio activo: services.msc → "postgresql-x64-XX" en Running (Windows)
+  4. Crear la conexión en SQLTools con los parámetros de la tabla
+
+Código watermark de fondo (JetBrains Mono, opacity 0.05):
+  CREATE DATABASE mi_proyecto;
+  \c mi_proyecto
+  CREATE USER estudiante WITH PASSWORD 'clave';
+
+Nota (borde #2EA44F): "La conexión local es tu laboratorio personal. Úsala para practicar sin afectar el servidor compartido de la Escuela."
+
+=== SLIDE 7 — FLUJO: ESCRIBIR Y EJECUTAR CONSULTAS ===
+Header badge: "FLUJO DE TRABAJO" | Título: "C. Escribir y Ejecutar Consultas en VS Code"
+Layout: pipeline de 4 pasos horizontales + regla dorada
+
+Pipeline:
+  Paso 1 (ícono fa-folder-open, #4FC3F7): "Abre el .sql" — "File existente o Ctrl+N → guarda como .sql"
+  Paso 2 (ícono fa-keyboard, #336791): "Escribe la consulta" — "Sin autocompletado. Línea a línea, consciente."
+  Paso 3 (ícono fa-mouse-pointer, #007ACC): "Selecciona el texto" — "Selecciona solo la consulta a ejecutar, no todo el archivo"
+  Paso 4 (ícono fa-play, #2EA44F): "Ejecuta" — "Ctrl+Shift+E o clic derecho → Run Selected Query"
+
+Regla dorada (caja destacada, fondo rgba(255,107,53,0.1), borde #FF6B35, ícono fa-exclamation-triangle):
+  "NUNCA uses 'ejecutar todo' sin revisar línea por línea lo que va a correr en el servidor compartido."
+
+Bloque lateral derecho — Explorar el esquema:
+  "En el panel lateral de SQLTools, expande tu conexión para ver:"
+  - Tablas disponibles
+  - Columnas y tipos de dato
+  - Funciones y vistas
+  "Esto reemplaza el Object Navigator de Oracle SQL Developer."
+
+=== SLIDE 8 — GESTIÓN CON GIT ===
+Header badge: "CONTROL DE VERSIONES" | Título: "Versionando tus Scripts .sql con Git"
+Layout: izquierda → estructura de carpetas | derecha → commits correctos
+
+Izquierda — Estructura del proyecto (fondo glass, JetBrains Mono):
+  mi-proyecto/
+  ├── src/
+  │   └── *.java          ← código Java
+  ├── scripts/
+  │   ├── esquema.sql     ← DDL: CREATE TABLE
+  │   └── datos.sql       ← DML: INSERT, SELECT
+  └── .gitignore          ← incluye !*.sql
+
+Nota: "El .gitignore estándar del curso ya incluye !*.sql — tus scripts quedan rastreados automáticamente."
+
+Derecha — Commits correctos vs incorrectos:
+  ✅ Commits correctos (cada uno en card verde):
+    git commit -m "feat: añade esquema inicial con claves foráneas"
+    git commit -m "fix: corrige restricción NOT NULL en tabla cliente"
+    git commit -m "feat: agrega datos de prueba para cliente y cuenta"
+
+  ❌ Commits incorrectos (card rojo):
+    git commit -m "cambios sql"
+    git commit -m "listo"
+    git commit -m "correcciones"
+
+  Principio: "Un commit = un cambio atómico con propósito claro."
+
+=== SLIDE 9 — BUENAS PRÁCTICAS EN SERVIDOR COMPARTIDO ===
+Header badge: "BUENAS PRÁCTICAS" | Título: "Protocolo de Trabajo en el Servidor Compartido"
+Layout: 4 tarjetas de reglas + bloque de protocolo de vaciado
+
+4 reglas (cards con ícono y borde de color):
+  Card 1 (borde #DA3633, ícono fa-ban color #DA3633):
+    "NO ejecutes DROP TABLE sin confirmación del equipo"
+    "El servidor es compartido. Una tabla eliminada afecta a todos los estudiantes."
+
+  Card 2 (borde #D29922, ícono fa-broom color #D29922):
+    "Vacía tus tablas temporales al finalizar"
+    "Usa TRUNCATE TABLE al terminar cada sesión para liberar espacio."
+
+  Card 3 (borde #4FC3F7, ícono fa-scissors color #4FC3F7):
+    "Prefiere TRUNCATE sobre DELETE sin WHERE"
+    "TRUNCATE es más eficiente para limpiar datos de prueba. DELETE sin WHERE es peligroso."
+
+  Card 4 (borde #2EA44F, ícono fa-plug color #2EA44F):
+    "Desconéctate al terminar la sesión"
+    "SQLTools mantiene conexiones activas. Clic derecho → Disconnect desde el panel lateral."
+
+Bloque de código de vaciado (fondo #0a0e1a, JetBrains Mono, borde #336791):
+  -- Protocolo de vaciado al finalizar la sesión:
+  TRUNCATE TABLE cuenta;
+  TRUNCATE TABLE cliente CASCADE;
+  -- Luego: clic derecho sobre la conexión → Disconnect
+
+=== SLIDE 10 — COMPARATIVA: ORACLE SQL DEVELOPER VS POSTGRESQL EN VS CODE ===
+Header badge: "COMPARATIVA" | Título: "Oracle SQL Developer vs. PostgreSQL en VS Code"
+Layout: tabla comparativa 5 filas × 3 columnas
+
+| Aspecto | Oracle SQL Developer | PostgreSQL + VS Code |
+| Motor de BD | Oracle Database (ORCL/xe) | PostgreSQL |
+| Identificador de BD | SID (ORCL o xe) | Nombre de base de datos |
+| Puerto por defecto | 1521 | 5432 |
+| Herramienta | App nativa (escritorio) | VS Code + SQLTools |
+| Entorno | Dedicado a SQL | Unificado (Java + SQL + Git) |
+
+Nota inferior (borde #4FC3F7):
+  "Ambos entornos te enseñan los mismos conceptos de SQL relacional. La diferencia es el motor y la herramienta — la lógica de SELECT, JOIN, CREATE TABLE es estándar SQL."
+
+=== SLIDE 11 — VIDEOS DE PRÁCTICA GUIADA ===
+Header badge: "PRÁCTICA" | Título: "🎥 Videos de Práctica Guiada — PostgreSQL en VS Code"
+Layout: 2 tarjetas de video grandes lado a lado (estilo Oracle SQL, dark tech)
+
+Tarjeta Video 1 (borde #4FC3F7, ícono fa-play-circle grande color #4FC3F7):
+  "Configuración de VS Code con SQLTools para PostgreSQL"
+  "Instala las extensiones, aplica la configuración Vainilla para MYSD y establece la primera conexión."
+  Herramientas: VS Code | SQLTools | Driver PostgreSQL | settings.json
+  Link visible (JetBrains Mono): https://youtu.be/OtQBMtXYGBw
+  Tag "VIDEO 4 • MYSD"
+
+Tarjeta Video 2 (borde #FF6B35, ícono fa-play-circle grande color #FF6B35):
+  "Consultas SQL Conscientes: Scripts, DDL, DML y Git"
+  "Escribe DDL y DML manualmente, ejecuta con Ctrl+Shift+E, versiona con Git y aplica el protocolo de limpieza."
+  Herramientas: Scripts .sql | SQLTools | Git commits atómicos | TRUNCATE
+  Link visible (JetBrains Mono): https://youtu.be/YgQrHChPF0o
+  Tag "VIDEO 5 • MYSD"
+
+=== SLIDE 12 — VERIFICACIÓN Y RECURSOS ===
+Header badge: "CIERRE" | Título: "Verificación Final y Recursos"
+Layout: 2 columnas
+
+Columna izquierda — Pregunta de Verificación (caja prominente, borde #D29922):
+  "En PostgreSQL, un compañero ejecuta DELETE FROM clientes; sin cláusula WHERE en el servidor compartido."
+  "¿Qué consecuencia tiene esto para el resto del equipo?"
+  "¿Cómo se podría haber evitado con un buen uso de control de versiones y commits atómicos?"
+
+Columna derecha — Recursos (lista con iconos tech):
+  🐘 PostgreSQL Docs: postgresql.org/docs/
+  📦 Descarga PostgreSQL: postgresql.org/download/
+  🔌 SQLTools Marketplace: marketplace.visualstudio.com (buscar SQLTools)
+  🔌 Driver PostgreSQL: marketplace.visualstudio.com (SQLTools PostgreSQL Driver)
+  💻 Guía VS Code Vainilla: fis-eci.github.io/software-foundations-eci/VSCode-Vanila/
+  📖 Wiki IS-FUNDAMENTOS: fis-eci.github.io/software-foundations-eci/Unidad-SQL-Postgre-VSC/
+
+Frase de cierre:
+  "Scripts versionados, servidor limpio y consultas conscientes — así trabaja un ingeniero responsable."
+  (JetBrains Mono, color rgba(79,195,247,0.7), centrado, parte inferior)
+
+Barra bottom tricolor y footer habitual.
+
+=== FIN PROMPT 3 ===
