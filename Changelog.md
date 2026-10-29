@@ -12,6 +12,26 @@ Todos los cambios notables en este repositorio de monitoría serán documentados
 
 ---
 
+## [2.0.0] - 2026-10-29
+### ✨ Añadido
+- **Identidad visual institucional**: logo oficial de la Escuela Colombiana de Ingeniería Julio Garavito en la wiki, en la portada de cada presentación y como emblema en todas las diapositivas.
+- **Modo claro y modo oscuro** en la wiki con botón de cambio; respeta la preferencia del sistema y recuerda la elección del estudiante.
+- **Página de inicio renovada** con portada y tarjetas de acceso directo a las cuatro unidades.
+- **Sistema de diseño de las presentaciones** (`design-system/` en el repositorio de diapositivas): tipografía unificada (Inter + JetBrains Mono), animaciones de entrada, esfera 3D en las portadas, vista general de diapositivas (`G`), modo inmersivo y navegación táctil.
+- **Nota sobre mutantes equivalentes** en la Unidad 4 (PIT).
+
+### 🔧 Modificado
+- Rediseño visual completo de las 75 diapositivas de las seis presentaciones, conservando su contenido.
+- Tema de la wiki: tipografía, tablas, bloques de código, callouts y navegación lateral rediseñados.
+- La sección de navegación de la Unidad 3 se llama ahora **"Unidad 3: Bases de Datos"** (antes "Oracle SQL"), ya que agrupa Oracle y PostgreSQL.
+
+### 🐛 Corregido
+- **Unidad 4 (PIT):** el mutante de ejemplo `monto > 0 → monto >= 0` en `consignar` es equivalente (ninguna prueba puede matarlo). Se reemplazó por `monto <= saldo → monto < saldo` en `retirar`, que sí se elimina con `shouldDejarSaldoEnCeroWhenRetirarTodoElSaldo()`.
+- **PostgreSQL en VS Code:** el atajo de SQLTools para ejecutar la consulta seleccionada es `Ctrl+E Ctrl+E` (`Cmd+E Cmd+E` en macOS), no `Ctrl+Shift+E`.
+- **Pregunta de verificación de PIT (Eclipse):** el mutante del reto ahora corresponde al código del ejemplo: `monto <= saldo → monto < saldo` en `retirar()`.
+- **JaCoCo en VS Code:** el reporte `jacoco.xml` lo genera Maven (`mvn test` con el plugin `jacoco-maven-plugin`), no el panel de Testing; se agregó la configuración del plugin.
+- **Presentaciones:** aserciones JUnit (`assertEquals` en lugar de `assert(...)`), correo de contacto unificado a `fis@escuelaing.edu.co` y acceso a granate sin VPN consistente en la presentación de Oracle.
+
 ## [1.3.0] - 2026-06-18
 ### ✨ Añadido
 - **Unidad 4: Análisis de Software** con página principal, sub-unidad Eclipse (SonarLint, PMD, EclEmma, Pitclipse) y sub-unidad VS Code (enfocada en DOPO).

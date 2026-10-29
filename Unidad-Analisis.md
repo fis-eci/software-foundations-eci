@@ -167,11 +167,14 @@ El bloque implícito "no se retira" de `retirar` (cuando `monto <= 0`) nunca es 
 
 ### 🔴 Análisis 4: PIT — Incidente Seleccionado
 
-PIT genera el mutante `monto > 0` → `monto >= 0` en `consignar`, y la prueba existente **no lo detecta** porque nunca prueba el caso `monto == 0`.
+PIT genera el mutante `monto <= saldo` → `monto < saldo` en `retirar`, y la prueba existente **no lo detecta** porque nunca prueba el caso límite `monto == saldo` (retirar exactamente todo el saldo).
 
 * **¿Por qué es relevante?** Revela que la cobertura de líneas puede ser alta pero las pruebas siguen siendo débiles ante variaciones límite.
 * **¿Qué principio ilustra?** La diferencia entre *código ejecutado* (JaCoCo) y *comportamiento realmente verificado* (PIT).
-* **Alternativa de solución:** Agregar `shouldNotConsignarWhenMontoCero()`.
+* **Alternativa de solución:** Agregar `shouldDejarSaldoEnCeroWhenRetirarTodoElSaldo()`: consignar 100.0, retirar 100.0 y verificar que el saldo quede en 0.0. Con el mutante el retiro se rechaza, el saldo sigue en 100.0 y la prueba falla, así que el mutante muere.
+
+{: .note }
+> **Mutantes equivalentes:** no todo mutante superviviente revela una prueba débil. Si PIT cambia `monto > 0` por `monto >= 0` en `consignar`, consignar `0.0` deja el saldo igual en ambas versiones (`saldo + 0 == saldo`): ningún test puede distinguirlas. Ese mutante es **equivalente** y se documenta como tal en el reporte en lugar de perseguirlo.
 
 ---
 

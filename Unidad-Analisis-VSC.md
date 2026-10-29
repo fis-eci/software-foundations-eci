@@ -77,8 +77,27 @@ SonarLint analiza el código en tiempo real y muestra los problemas directamente
 JaCoCo en VS Code requiere dos pasos: generar el reporte ejecutando las pruebas y luego visualizarlo con Coverage Gutters.
 
 **Cómo ejecutarlo:**
-1. Ejecuta las pruebas desde el panel de Testing (ícono de beaker 🧪 en la barra lateral) → **Run All Tests**.
-2. JaCoCo genera automáticamente un archivo `jacoco.xml` en la carpeta `target/` o `coverage/`.
+1. Asegúrate de que tu `pom.xml` incluya el plugin `jacoco-maven-plugin` (bloque de abajo, dentro de `<build><plugins>...</plugins></build>`).
+2. Ejecuta `mvn test` en la terminal integrada (`` Ctrl+` ``). JaCoCo genera el reporte `target/site/jacoco/jacoco.xml`.
+
+```xml
+<plugin>
+  <groupId>org.jacoco</groupId>
+  <artifactId>jacoco-maven-plugin</artifactId>
+  <version>0.8.12</version>
+  <executions>
+    <execution>
+      <goals><goal>prepare-agent</goal></goals>
+    </execution>
+    <execution>
+      <id>report</id>
+      <phase>test</phase>
+      <goals><goal>report</goal></goals>
+    </execution>
+  </executions>
+</plugin>
+```
+
 3. Abre la paleta de comandos (`Ctrl+Shift+P`) → `Coverage Gutters: Display Coverage`.
 4. El editor coloreará las líneas:
 

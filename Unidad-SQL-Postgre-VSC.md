@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "PostgreSQL en VS Code"
-parent: "Unidad 3: Oracle SQL"
+parent: "Unidad 3: Bases de Datos"
 nav_order: 2
 permalink: /Unidad-SQL-Postgre-VSC/
 ---
@@ -108,7 +108,7 @@ Si no tienes acceso al servidor de la Escuela o quieres practicar de forma autó
 1. En el panel de SQLTools, expande tu conexión para explorar tablas y esquemas.
 2. Abre un archivo `.sql` existente o crea uno nuevo (`Ctrl+N` → guarda con extensión `.sql`).
 3. Escribe la consulta manualmente.
-4. Para ejecutarla: selecciona el texto de la consulta y presiona `Ctrl+Shift+E`, o haz clic derecho → **Run Selected Query**.
+4. Para ejecutarla: selecciona el texto de la consulta y presiona `Ctrl+E Ctrl+E` (en macOS `Cmd+E Cmd+E`), o haz clic derecho → **Run Selected Query**.
 
 {: .warning }
 > **Recuerda la filosofía Vainilla:** ejecuta siempre las consultas de forma manual y explícita. No uses el botón de "ejecutar todo" sin revisar línea por línea lo que va a correr.

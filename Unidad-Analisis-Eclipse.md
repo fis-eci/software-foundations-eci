@@ -242,7 +242,7 @@ Para cada uno de los cuatro análisis, sigue este protocolo de cinco etapas:
 ## 📚 Verificación y Recursos Adicionales
 
 {: .warning }
-> **Pregunta de Verificación:** Después de ejecutar PIT, encuentras que el mutante `saldo > 0 → saldo >= 0` en el método `retirar()` sobrevivió. ¿Qué prueba unitaria exacta agregarías para eliminarlo? Escríbela completa siguiendo la nomenclatura `shouldXWhenY` y la estructura BDD (Given/When/Then).
+> **Pregunta de Verificación:** Después de ejecutar PIT, encuentras que el mutante `monto <= saldo → monto < saldo` en el método `retirar()` sobrevivió. ¿Qué prueba unitaria exacta agregarías para eliminarlo? Escríbela completa siguiendo la nomenclatura `shouldXWhenY` y la estructura BDD (Given/When/Then).
 
 **Recursos:**
 * 📘 [Eclipse IDE Downloads](https://www.eclipse.org/downloads/)
