@@ -1,22 +1,59 @@
 # Información del Sitio
 title: "IS-FUNDAMENTOS"
-description: "Centro de Unidades de Aprendizaje - Monitoría DOPO/MYSD"
+description: "Centro de Unidades de Aprendizaje - Monitoría DOPO/MYSD · Escuela Colombiana de Ingeniería Julio Garavito"
 baseurl: "/software-foundations-eci" # Nombre del repo
 url: "https://fis-eci.github.io"
+lang: es
 
-# 💎 EL MEJOR TEMA: Just the Docs
+# Tema: Just the Docs con identidad visual ECI (modo claro / oscuro)
 remote_theme: just-the-docs/just-the-docs
 
 plugins:
   - jekyll-remote-theme
 
+logo: "/assets/images/eci-logo.svg"
+color_scheme: eci-light # eci-dark se activa con el botón de tema (ver _includes/head_custom.html)
+
 # Configuración del Tema
 search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: true
 heading_anchors: true
 aux_links:
-  "GitHub Repository":
+  "Presentaciones":
+    - "https://fis-eci.github.io/software-foundations-eci-slides/"
+  "GitHub":
     - "https://github.com/fis-eci/software-foundations-eci"
 aux_links_new_tab: true
+
+back_to_top: true
+back_to_top_text: "Volver arriba ↑"
+
+gh_edit_link: true
+gh_edit_link_text: "Proponer una mejora a esta página en GitHub"
+gh_edit_repository: "https://github.com/fis-eci/software-foundations-eci"
+gh_edit_branch: "main"
+gh_edit_view_mode: "edit"
+
+# Callouts: {: .note }, {: .highlight }, {: .important }, {: .warning }
+callouts:
+  highlight:
+    color: blue
+  note:
+    title: Nota
+    color: blue
+  important:
+    title: Importante
+    color: purple
+  warning:
+    title: Advertencia
+    color: red
 
 # Navegación
 nav_fold: false

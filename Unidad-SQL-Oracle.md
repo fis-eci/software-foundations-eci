@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Oracle SQL Developer"
-parent: "Unidad 3: Oracle SQL"
+parent: "Unidad 3: Bases de Datos"
 nav_order: 1
 permalink: /Unidad-SQL-Oracle/
 ---

@@ -11,11 +11,23 @@ permalink: /
 
 ---
 
-<div align="center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Logo_de_la_Escuela_Colombiana_de_Ingenier%C3%ADa_-_Universidad.webp" alt="Logo Escuela" width="350">
-  <br>
-  <h1>Unidad de Aprendizaje Integral</h1>
-  <p><i>"Transformando la teoría en ingeniería aplicada mediante el aprendizaje activo."</i></p>
+<div class="eci-hero" align="center">
+  <img class="eci-hero-logo" src="assets/images/eci-logo.svg" alt="Escuela Colombiana de Ingeniería Julio Garavito" width="260">
+  <div class="eci-kicker">Escuela Colombiana de Ingeniería Julio Garavito</div>
+  <h2 class="eci-hero-title">Unidad de Aprendizaje <span>Integral</span></h2>
+  <p class="eci-hero-lead"><i>"Transformando la teoría en ingeniería aplicada mediante el aprendizaje activo."</i></p>
+  <div class="eci-actions">
+    <a class="eci-btn primary" href="./Unidad-CVS/">Empezar por la Unidad 1 →</a>
+    <a class="eci-btn" href="https://fis-eci.github.io/software-foundations-eci-slides/">▶ Ver presentaciones</a>
+    <a class="eci-btn" href="./VSCode-Vanila/">⚙️ Guía VS Code Vainilla</a>
+  </div>
+</div>
+
+<div class="eci-cards">
+  <a class="eci-card" style="--c:#2f81f7" href="./Unidad-CVS/"><span class="eci-card-icon">📦</span><span class="eci-card-kicker">Unidad 1 · MYSD &amp; DOPO</span><span class="eci-card-title">Control de Versiones (CVS)</span><span class="eci-card-text">Teoría de CVS, buenas prácticas por pares y Git/GitHub.</span><span class="eci-card-go">Abrir unidad →</span></a>
+  <a class="eci-card" style="--c:#f89820" href="./Unidad-Pruebas/"><span class="eci-card-icon">🧪</span><span class="eci-card-kicker">Unidad 2 · DOPO</span><span class="eci-card-title">Pruebas Unitarias (JUnit)</span><span class="eci-card-text">BDD, estándares TDD y JUnit en BlueJ.</span><span class="eci-card-go">Abrir unidad →</span></a>
+  <a class="eci-card" style="--c:#00a8d6" href="./Unidad-SQL/"><span class="eci-card-icon">🗄️</span><span class="eci-card-kicker">Unidad 3 · MYSD</span><span class="eci-card-title">Gestión de Bases de Datos</span><span class="eci-card-text">Oracle SQL Developer y PostgreSQL en VS Code.</span><span class="eci-card-go">Abrir unidad →</span></a>
+  <a class="eci-card" style="--c:#e5534b" href="./Unidad-Analisis/"><span class="eci-card-icon">🔬</span><span class="eci-card-kicker">Unidad 4 · DOPO</span><span class="eci-card-title">Análisis de Software</span><span class="eci-card-text">SonarLint, PMD, JaCoCo y PIT en Eclipse y VS Code.</span><span class="eci-card-go">Abrir unidad →</span></a>
 </div>
 
 ---

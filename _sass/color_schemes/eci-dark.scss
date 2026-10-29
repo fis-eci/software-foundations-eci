@@ -1,0 +1,28 @@
+// ECI Dark — IS-FUNDAMENTOS wiki (dark mode)
+@import "./color_schemes/dark";
+
+$color-scheme: dark;
+$body-background-color: #0a0c11;
+$sidebar-color: #0e1118;
+$search-background-color: #141823;
+$table-background-color: #0f121a;
+$code-background-color: #11151e;
+$feedback-color: #161b26;
+$body-text-color: #c9ced9;
+$body-heading-color: #f5f5f7;
+$nav-child-link-color: #9aa1b0;
+$link-color: #6cb6ff;
+$btn-primary-color: #2f7fe6;
+$base-button-color: #1a1f2b;
+$border-color: #222838;
+$search-result-preview-color: #9aa1b0;
+
+// IS-FUNDAMENTOS extras (used by custom.scss)
+$eci-red: #ff5a47;
+$eci-accent: #6cb6ff;
+$eci-accent-2: #b39bff;
+$eci-surface: #10141c;
+$eci-surface-2: #141924;
+$eci-muted: #9aa1b0;
+$eci-shadow: 0 1px 0 rgba(255, 255, 255, .04) inset, 0 20px 40px -20px rgba(0, 0, 0, .8);
+$eci-logo-filter: invert(1) hue-rotate(180deg) brightness(1.05);
