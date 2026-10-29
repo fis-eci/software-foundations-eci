@@ -43,7 +43,7 @@ Cada archivo en este repositorio ha sido diseñado con una secuencia didáctica 
 
 ## 🛠️ Stack Tecnológico
 Para la realización de las prácticas guiadas y el despliegue del material se utilizaron:
-* **Entornos:** BlueJ → Eclipse IDE / VS Code, GitHub (CVS), Oracle SQL Developer.
+* **Entornos:** BlueJ → Eclipse IDE / VS Code, GitHub (CVS), Oracle SQL Developer / Oracle XE, PostgreSQL (SQLTools en VS Code).
 * **Frameworks:** JUnit 4/5 para pruebas de unidad.
 * **Análisis de calidad:** SonarLint, PMD, JaCoCo (EclEmma / Coverage Gutters), PIT (Pitclipse / Maven).
 * **Documentación:** Markdown avanzado con soporte para metadatos (Jekyll) y tema **Just the Docs**.

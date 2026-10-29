@@ -2,7 +2,7 @@
 title: "IS-FUNDAMENTOS"
 description: "Centro de Unidades de Aprendizaje - Monitoría DOPO/MYSD"
 baseurl: "/software-foundations-eci" # Nombre del repo
-url: "https://anderssonprogramming.github.io"
+url: "https://fis-eci.github.io"
 
 # 💎 EL MEJOR TEMA: Just the Docs
 remote_theme: just-the-docs/just-the-docs
@@ -15,7 +15,7 @@ search_enabled: true
 heading_anchors: true
 aux_links:
   "GitHub Repository":
-    - "https://github.com/anderssonprogramming/software-foundations-eci"
+    - "https://github.com/fis-eci/software-foundations-eci"
 aux_links_new_tab: true
 
 # Navegación

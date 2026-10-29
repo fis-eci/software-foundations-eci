@@ -57,7 +57,7 @@ Facilitar la apropiación de conceptos fundamentales de ingeniería mediante rec
 Para garantizar la modularidad y replicabilidad, trabajamos con:
 * **Control de Versiones:** `Git` & `GitHub`
 * **Desarrollo OO:** `Java` & `BlueJ` → `Eclipse IDE` / `VS Code`
-* **Bases de Datos:** `Oracle SQL Developer` & `Oracle XE`
+* **Bases de Datos:** `Oracle SQL Developer` & `Oracle XE` · `PostgreSQL` en `VS Code` (SQLTools)
 * **Modelado:** Archivos `.asta` (Astah)
 * **Calidad:** `JUnit` · `SonarLint` · `PMD` · `JaCoCo` · `PIT`
 
