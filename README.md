@@ -28,6 +28,7 @@ permalink: /
   <a class="eci-card" style="--c:#f89820" href="./Unidad-Pruebas/"><span class="eci-card-icon">🧪</span><span class="eci-card-kicker">Unidad 2 · DOPO</span><span class="eci-card-title">Pruebas Unitarias (JUnit)</span><span class="eci-card-text">BDD, estándares TDD y JUnit en BlueJ.</span><span class="eci-card-go">Abrir unidad →</span></a>
   <a class="eci-card" style="--c:#00a8d6" href="./Unidad-SQL/"><span class="eci-card-icon">🗄️</span><span class="eci-card-kicker">Unidad 3 · MYSD</span><span class="eci-card-title">Gestión de Bases de Datos</span><span class="eci-card-text">Oracle SQL Developer y PostgreSQL en VS Code.</span><span class="eci-card-go">Abrir unidad →</span></a>
   <a class="eci-card" style="--c:#e5534b" href="./Unidad-Analisis/"><span class="eci-card-icon">🔬</span><span class="eci-card-kicker">Unidad 4 · DOPO</span><span class="eci-card-title">Análisis de Software</span><span class="eci-card-text">SonarLint, PMD, JaCoCo y PIT en Eclipse y VS Code.</span><span class="eci-card-go">Abrir unidad →</span></a>
+  <a class="eci-card" style="--c:#8b5cf6" href="./Unidad-Diseno/"><span class="eci-card-icon">📐</span><span class="eci-card-kicker">Unidad 5 · MYSD &amp; DOPO</span><span class="eci-card-title">Diseño con Astah</span><span class="eci-card-text">Metodología de diseño con Astah: Empresa comercializadora y Batalla N.</span><span class="eci-card-go">Abrir unidad →</span></a>
 </div>
 
 ---
@@ -47,6 +48,7 @@ Cada archivo en este repositorio ha sido diseñado con una secuencia didáctica 
 | **[🧪 Unidad 2: Pruebas](./Unidad-Pruebas)** | **Pruebas Unitarias** | R1: Conceptos BDD, R2: Estándares TDD y R3: JUnit en BlueJ. |
 | **[🗄️ Unidad 3: SQL](./Unidad-SQL/)** | **Gestión de Bases de Datos** | Página principal con conceptos transversales y dos sub-unidades: [Oracle SQL Developer](./Unidad-SQL-Oracle/) y [PostgreSQL en VS Code](./Unidad-SQL-Postgre-VSC/). |
 | **[🔬 Unidad 4: Análisis](./Unidad-Analisis/)** | **Análisis de Software** | S1: Teoría (SonarLint, PMD, JaCoCo, PIT), S2: Práctica por ejemplo y S3/S4 en [Eclipse](./Unidad-Analisis-Eclipse/) y [VS Code](./Unidad-Analisis-VSC/). |
+| **[📐 Unidad 5: Diseño](./Unidad-Diseno/)** | **Diseño con Astah** | Metodología de diseño iterativa e incremental con Astah: [MYSD](./Unidad-Diseno-MYSD/) (conceptual, lógico y físico · Empresa comercializadora) y [DOPO](./Unidad-Diseno-DOPO/) (paquetes, clases y secuencia · Batalla N). |
 | **[💻 Guía VS Code Vainilla](./VSCode-Vanila/)** | **Configuración VS Code** | Extensiones para DOPO y MYSD, configuración consciente sin IA y `settings.json` completo. |
 | **[📚 Recursos](./Recursos)** | **Bibliografía** | Enlaces externos, simuladores y documentación oficial. |
 | **[📝 Changelog](./Changelog)** | **Bitácora** | Historial de versiones y mejoras del material educativo. |

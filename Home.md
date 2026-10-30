@@ -45,6 +45,11 @@ Facilitar la apropiación de conceptos fundamentales de ingeniería mediante rec
 * **S2: Práctica por Ejemplo:** Ciclo completo de análisis sobre `CuentaBancaria`.
 * **S3 & S4:** Entornos profesionales — [Eclipse](../Unidad-Analisis-Eclipse/) y [VS Code](../Unidad-Analisis-VSC/).
 
+### 📐 [Unidad 5: Diseño con Astah (MYSD & DOPO)](../Unidad-Diseno/)
+*Enfoque: Diseñar antes de construir siguiendo una metodología.*
+* **[MYSD](../Unidad-Diseno-MYSD/):** Empresa comercializadora — diseño conceptual, lógico (Modelo Mini) y físico, por áreas de negocio.
+* **[DOPO](../Unidad-Diseno-DOPO/):** Batalla N — paquetes, diagramas de clases y de secuencia, por versiones y comportamiento.
+
 ### 💻 [Guía: VS Code Vainilla](../VSCode-Vanila/)
 *Referencia transversal para DOPO y MYSD.*
 * Extensiones para Java (DOPO) y SQL (MYSD).

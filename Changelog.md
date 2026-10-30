@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "📝 Bitácora de Cambios"
-nav_order: 9
+nav_order: 10
 permalink: /Changelog/
 ---
 
@@ -11,6 +11,14 @@ permalink: /Changelog/
 Todos los cambios notables en este repositorio de monitoría serán documentados en esta página.
 
 ---
+
+## [2.1.0] - 2026-10-30
+### ✨ Añadido
+- **Unidad 5: Diseño con Astah** con página principal y dos sub-unidades independientes con el mismo propósito:
+  - **MYSD · Empresa comercializadora:** diseño conceptual (general y extendido), lógico (Modelo Mini, 9 tablas) y físico (datos, componentes `PC_` y actores `PA_`), con el script SQL de tablas y claves y las consultas operativa y gerencial.
+  - **DOPO · Batalla N:** diagrama de paquetes, clases de presentación y dominio en cuatro versiones, mapa de memoria y un diagrama de secuencia con su código Java para cada método de `Flota`.
+- **Presentaciones interactivas** de la unidad (17 y 22 diapositivas) con pausas de aprendizaje activo: *Reproduce en Astah* y *Resuelve y contrasta* (soluciones veladas).
+- Diagramas UML en `assets/diagramas/`, listos para reproducir en Astah.
 
 ## [2.0.0] - 2026-10-29
 ### ✨ Añadido
